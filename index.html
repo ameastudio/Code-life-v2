@@ -61,6 +61,25 @@ body{min-height:100dvh;background:#072b7e;font-family:system-ui,-apple-system,Bl
 .identity-choice:focus-visible,.identity-continue:focus-visible{outline:3px solid #fff;outline-offset:2px}
 .identity-continue{left:21.67%;top:88.64%;width:55.58%;height:7.05%;border-radius:999px}
 
+
+/* Screen 4: original approved six-pet selector, source image at 941 × 1672. */
+.pet-controls{position:absolute;inset:0;z-index:3;pointer-events:none}
+.pet-art-space{position:absolute;top:0;left:50%;transform:translateX(-50%);width:calc(100dvh * 941 / 1672);height:100%;pointer-events:none}
+.pet-choice,.pet-continue{position:absolute;display:block;border:0;background:transparent;color:transparent;padding:0;cursor:pointer;touch-action:manipulation;pointer-events:auto;-webkit-tap-highlight-color:transparent}
+.pet-choice{border-radius:7%/10%}
+.pet-choice[data-pet="pixel-pup"]{left:6.48%;top:22.50%;width:43.14%;height:20.98%}
+.pet-choice[data-pet="byte-cat"]{left:50.48%;top:22.50%;width:42.29%;height:20.98%}
+.pet-choice[data-pet="nova-owl"]{left:6.48%;top:44.08%;width:43.14%;height:19.38%}
+.pet-choice[data-pet="loop-fox"]{left:50.48%;top:44.08%;width:42.29%;height:19.38%}
+.pet-choice[data-pet="chip-bunny"]{left:6.48%;top:63.98%;width:43.14%;height:17.18%}
+.pet-choice[data-pet="glitch-dino"]{left:50.48%;top:63.98%;width:42.29%;height:17.18%}
+.pet-choice[aria-pressed="true"]:not([data-pet="pixel-pup"]){box-shadow:inset 0 0 0 4px #82faff,0 0 18px #19c9ff;border-radius:24px}
+.pet-choice[aria-pressed="true"]:not([data-pet="pixel-pup"])::after{content:"✓";position:absolute;right:2%;top:1%;width:13%;aspect-ratio:1;display:grid;place-items:center;border:2px solid #d7ffff;border-radius:50%;font-size:clamp(14px,2.6dvh,22px);font-weight:900;color:white;background:linear-gradient(160deg,#11dffd,#0961e2);box-shadow:0 0 16px #5ffaff}
+.pet-choice:focus-visible,.pet-continue:focus-visible{outline:3px solid white;outline-offset:3px}
+.pet-continue{left:29.23%;top:89.68%;width:60.06%;height:6.46%;border-radius:999px}
+/* The artwork initially contains Pixel Pup's selection badge; cover ONLY that badge
+   when another pet is selected to avoid showing two checked pets. */
+.pet-default-check-cover{position:absolute;left:42.0%;top:23.22%;width:6.55%;height:3.74%;border-radius:50%;pointer-events:none;background:radial-gradient(ellipse at 52% 46%,#d6f4ff 5%,#d6effe 42%,#b3e3fa 75%,transparent 90%);}
 </style>
   <title>Code Life</title>
 </head>
@@ -89,106 +108,114 @@ body{min-height:100dvh;background:#072b7e;font-family:system-ui,-apple-system,Bl
         <button id="identity-continue" class="identity-continue" type="button" aria-label="Save selection and Continue"></button>
       </div>
     </div>
+
+    <div id="pet-controls" class="pet-controls" hidden>
+      <div class="pet-art-space">
+        <span id="pet-default-check-cover" class="pet-default-check-cover" hidden aria-hidden="true"></span>
+        <button class="pet-choice" data-pet="pixel-pup" type="button" aria-pressed="true" aria-label="Choose Pixel Pup"></button>
+        <button class="pet-choice" data-pet="byte-cat" type="button" aria-pressed="false" aria-label="Choose Byte Cat"></button>
+        <button class="pet-choice" data-pet="nova-owl" type="button" aria-pressed="false" aria-label="Choose Nova Owl"></button>
+        <button class="pet-choice" data-pet="loop-fox" type="button" aria-pressed="false" aria-label="Choose Loop Fox"></button>
+        <button class="pet-choice" data-pet="chip-bunny" type="button" aria-pressed="false" aria-label="Choose Chip Bunny"></button>
+        <button class="pet-choice" data-pet="glitch-dino" type="button" aria-pressed="false" aria-label="Choose Glitch Dino"></button>
+        <button id="pet-continue" class="pet-continue" type="button" aria-label="Start Journey with selected Code Pet"></button>
+      </div>
+    </div>
     <div id="screen-toast" class="screen-toast" role="status" aria-live="polite" hidden></div>
     <span class="sr-only" aria-live="polite" id="screen-announcement"></span>
   </main>
   <script>
-/* Code Life v2 screens 1–3. Every visual comes from Bri's approved image files. */
+/* Code Life v2 screens 1–4: ONLY Bri's approved screenshot assets are displayed. */
 (()=>{
-  'use strict';
-  const LEVEL_KEY='code-life-v2:onboarding:level';
-  const IDENTITY_KEY='code-life-v2:onboarding:identity';
-  const LEVELS=new Set(['beginner','intermediate','advanced']);
-  const IDENTITIES=new Set(['student','self-taught','career-switcher','professional']);
-  const art=document.getElementById('approved-screen');
-  const start=document.getElementById('get-started');
-  const letterRepair=document.getElementById('beginner-n-repair');
-  const back=document.getElementById('go-back');
-  const levelControls=document.getElementById('level-controls');
-  const levelChoices=[...document.querySelectorAll('.level-choice')];
-  const levelContinue=document.getElementById('level-continue');
-  const identityControls=document.getElementById('identity-controls');
-  const identityChoices=[...document.querySelectorAll('.identity-choice')];
-  const identityContinue=document.getElementById('identity-continue');
-  const toast=document.getElementById('screen-toast');
-  const msg=document.getElementById('screen-announcement');
-  let chosenLevel='beginner';
-  let chosenIdentity=null;
-  let toastTimer;
-  try {
-    const savedLevel=localStorage.getItem(LEVEL_KEY);
-    if(LEVELS.has(savedLevel))chosenLevel=savedLevel;
-    const savedIdentity=localStorage.getItem(IDENTITY_KEY);
-    if(IDENTITIES.has(savedIdentity))chosenIdentity=savedIdentity;
-  } catch (_) {/* Local storage may be unavailable in private sessions. */}
-  function niceIdentity(value){
-    return ({
-      'student':'Student',
-      'self-taught':'Self-taught learner',
-      'career-switcher':'Career switcher',
-      'professional':'Professional'
-    })[value]||'';
-  }
-  function announce(text){
-    clearTimeout(toastTimer);
-    toast.textContent=text;
-    toast.hidden=false;
-    toastTimer=setTimeout(()=>{toast.hidden=true;},2700);
-  }
-  function highlight(){
-    levelChoices.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.level===chosenLevel)));
-    identityChoices.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.identity===chosenIdentity)));
-  }
-  function render(){
-    const isLevel=location.hash==='#/level';
-    const isIdentity=location.hash==='#/identity';
-    art.src=isIdentity?'./identity-approved.webp':isLevel?'./level-approved.webp':'./entry-approved.webp';
-    art.alt=isIdentity
-      ?'Original approved What describes you best screen: Student, Self-taught learner, Career switcher, Professional and Pixel Pup.'
-      :isLevel
-        ?'Original approved Choose your coding level screen: Beginner, Intermediate and Advanced, with Pixel Pup.'
-        :'Original approved Code Life splash screen with its official logo, Pixel Pup, and Get Started.';
-    start.hidden=isLevel||isIdentity;
-    back.hidden=!(isLevel||isIdentity);
-    levelControls.hidden=!isLevel;
-    identityControls.hidden=!isIdentity;
-    letterRepair.hidden=!isLevel;
-    clearTimeout(toastTimer);
-    toast.hidden=true;
-    highlight();
-    msg.textContent=isIdentity
-      ?'What describes you best? '+(chosenIdentity?niceIdentity(chosenIdentity)+' is selected.':'Please select one option.')
-      :isLevel
-        ?'Choose your coding level. '+chosenLevel[0].toUpperCase()+chosenLevel.slice(1)+' is selected.'
-        :'Welcome to Code Life.';
-    document.title=isIdentity?'What Describes You Best? — Code Life':isLevel?'Choose Your Coding Level — Code Life':'Code Life';
-  }
-  levelChoices.forEach(button=>button.addEventListener('click',()=>{
-    chosenLevel=button.dataset.level;
-    highlight();
-    msg.textContent=chosenLevel[0].toUpperCase()+chosenLevel.slice(1)+' selected.';
-  }));
-  levelContinue.addEventListener('click',()=>{
-    try {localStorage.setItem(LEVEL_KEY,chosenLevel);}catch(_){announce('Please enable local storage to save your choice.');return;}
-    location.hash='/identity';
-  });
-  identityChoices.forEach(button=>button.addEventListener('click',()=>{
-    chosenIdentity=button.dataset.identity;
-    highlight();
-    msg.textContent=niceIdentity(chosenIdentity)+' selected.';
-  }));
-  identityContinue.addEventListener('click',()=>{
-    if(!chosenIdentity){announce('Choose an option first.');return;}
-    try {localStorage.setItem(IDENTITY_KEY,chosenIdentity);}catch(_){announce('Please enable local storage to save your choice.');return;}
-    msg.textContent=niceIdentity(chosenIdentity)+' saved.';
-    announce('Saved! Next: Choose Your Code Pet.');
-    /* Screen 4 is intentionally not fabricated. Connect after its approved
-       exact picture and functional six-pet selector are installed. */
-  });
-  start.addEventListener('click',()=>{location.hash='/level';});
-  back.addEventListener('click',()=>{location.hash=location.hash==='#/identity'?'/level':'/';});
-  addEventListener('hashchange',render);
-  render();
+'use strict';
+const LEVEL_KEY='code-life-v2:onboarding:level';
+const IDENTITY_KEY='code-life-v2:onboarding:identity';
+const PET_KEY='code-life-v2:onboarding:pet';
+const LEVELS=new Set(['beginner','intermediate','advanced']);
+const IDENTITIES=new Set(['student','self-taught','career-switcher','professional']);
+const PETS=new Set(['pixel-pup','byte-cat','nova-owl','loop-fox','chip-bunny','glitch-dino']);
+const petNames={'pixel-pup':'Pixel Pup','byte-cat':'Byte Cat','nova-owl':'Nova Owl','loop-fox':'Loop Fox','chip-bunny':'Chip Bunny','glitch-dino':'Glitch Dino'};
+const identityNames={'student':'Student','self-taught':'Self-taught learner','career-switcher':'Career switcher','professional':'Professional'};
+const art=document.getElementById('approved-screen');
+const start=document.getElementById('get-started');
+const letterRepair=document.getElementById('beginner-n-repair');
+const back=document.getElementById('go-back');
+const levelControls=document.getElementById('level-controls');
+const levelChoices=[...document.querySelectorAll('.level-choice')];
+const levelContinue=document.getElementById('level-continue');
+const identityControls=document.getElementById('identity-controls');
+const identityChoices=[...document.querySelectorAll('.identity-choice')];
+const identityContinue=document.getElementById('identity-continue');
+const petControls=document.getElementById('pet-controls');
+const petChoices=[...document.querySelectorAll('.pet-choice')];
+const petContinue=document.getElementById('pet-continue');
+const originalPetBadgeCover=document.getElementById('pet-default-check-cover');
+const toast=document.getElementById('screen-toast');
+const msg=document.getElementById('screen-announcement');
+let chosenLevel='beginner',chosenIdentity=null,chosenPet='pixel-pup',toastTimer;
+try {
+  const lev=localStorage.getItem(LEVEL_KEY),ident=localStorage.getItem(IDENTITY_KEY),pet=localStorage.getItem(PET_KEY);
+  if(LEVELS.has(lev))chosenLevel=lev;
+  if(IDENTITIES.has(ident))chosenIdentity=ident;
+  if(PETS.has(pet))chosenPet=pet;
+} catch(_){/* Private-browser storage can be unavailable. */}
+function announce(text){
+  clearTimeout(toastTimer);toast.textContent=text;toast.hidden=false;
+  toastTimer=setTimeout(()=>{toast.hidden=true;},2700);
+}
+function highlight(){
+  levelChoices.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.level===chosenLevel)));
+  identityChoices.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.identity===chosenIdentity)));
+  petChoices.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.pet===chosenPet)));
+  originalPetBadgeCover.hidden=chosenPet==='pixel-pup';
+}
+function render(){
+  const hash=location.hash;
+  const page=hash==='#/pet-choice'?'pet':hash==='#/identity'?'identity':hash==='#/level'?'level':'entry';
+  art.src=page==='pet'?'./pet-chooser-approved.webp':page==='identity'?'./identity-approved.webp':page==='level'?'./level-approved.webp':'./entry-approved.webp';
+  art.alt=page==='pet'
+    ?'Approved Choose your Code Pet screen featuring the exact Pixel Pup, Byte Cat, Nova Owl, Loop Fox, Chip Bunny and Glitch Dino artwork.'
+    :page==='identity'
+      ?'Approved What describes you best screen with Student, Self-taught learner, Career switcher and Professional.'
+      :page==='level'
+        ?'Approved Choose your coding level screen with Beginner, Intermediate, Advanced and Pixel Pup.'
+        :'Official Code Life entry screen with approved logo and Pixel Pup.';
+  start.hidden=page!=='entry';
+  back.hidden=page==='entry';
+  levelControls.hidden=page!=='level';
+  identityControls.hidden=page!=='identity';
+  petControls.hidden=page!=='pet';
+  letterRepair.hidden=page!=='level';
+  clearTimeout(toastTimer);toast.hidden=true;highlight();
+  msg.textContent=page==='pet'?'Choose your Code Pet. '+petNames[chosenPet]+' is selected.'
+    :page==='identity'?'What describes you best? '+(chosenIdentity?identityNames[chosenIdentity]+' is selected.':'Please select an option.')
+    :page==='level'?'Choose your coding level. '+chosenLevel+' is selected.':'Welcome to Code Life.';
+  document.title=page==='pet'?'Choose Your Code Pet — Code Life':page==='identity'?'What Describes You Best? — Code Life':page==='level'?'Coding Level — Code Life':'Code Life';
+}
+levelChoices.forEach(b=>b.addEventListener('click',()=>{chosenLevel=b.dataset.level;highlight();msg.textContent=chosenLevel+' selected.';}));
+identityChoices.forEach(b=>b.addEventListener('click',()=>{chosenIdentity=b.dataset.identity;highlight();msg.textContent=identityNames[chosenIdentity]+' selected.';}));
+petChoices.forEach(b=>b.addEventListener('click',()=>{chosenPet=b.dataset.pet;highlight();msg.textContent=petNames[chosenPet]+' selected.';}));
+levelContinue.addEventListener('click',()=>{
+  try{localStorage.setItem(LEVEL_KEY,chosenLevel);}catch(_){announce('Allow device storage to save your choice.');return;}
+  location.hash='/identity';
+});
+identityContinue.addEventListener('click',()=>{
+  if(!chosenIdentity){announce('Choose an option first.');return;}
+  try{localStorage.setItem(IDENTITY_KEY,chosenIdentity);}catch(_){announce('Allow device storage to save your choice.');return;}
+  location.hash='/pet-choice';
+});
+petContinue.addEventListener('click',()=>{
+  try{localStorage.setItem(PET_KEY,chosenPet);}catch(_){announce('Allow device storage to save your choice.');return;}
+  msg.textContent=petNames[chosenPet]+' chosen and saved.';
+  announce(petNames[chosenPet]+' saved! Code City comes next.');
+  /* Do not fake Code City. It will be connected after its separate approved build. */
+});
+start.addEventListener('click',()=>{location.hash='/level';});
+back.addEventListener('click',()=>{
+  location.hash=location.hash==='#/pet-choice'?'/identity':location.hash==='#/identity'?'/level':'/';
+});
+addEventListener('hashchange',render);
+render();
 })();
 </script>
 </body>
