@@ -133,3 +133,6 @@ Pet Shop outfits and accessories **unlock gradually as the player's chosen Code 
 
 ## Town-based pet evolution — approved (2026-10-02)
 Chosen Code Pets **evolve by completing entire Code City towns**, not by accumulating general XP. Award the evolution at completion of that town's final Boss Build along with the existing pet celebration. Evolution adds tech-inspired/glowing upgrades and maintains the pet's original recognizable identity and approved design; pets do not age or change into unrelated creatures. New shop outfits and accessories unlock based on town-based evolution milestones.
+
+## Pet bedroom customization — declined (2026-10-02)
+Do **not** add purchasable bedroom customization or furniture decorating with coins. Keep the approved futuristic pet bedroom design intact. The Pet Shop may still sell previously approved pet outfits, accessories and Streak Freezes.
