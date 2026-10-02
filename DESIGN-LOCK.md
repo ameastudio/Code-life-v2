@@ -118,3 +118,6 @@ Players may spend **earned Code Coins** to buy **Streak Freezes**, protecting a 
 
 ## Streak Freeze shop location — approved (2026-10-02)
 Streak Freezes are **purchased with earned Code Coins in the in-app Shop**. Keep purchase separate from the question of when a bought freeze activates; activation behavior is not yet approved.
+
+## Streak Freeze automatic activation — assistant-selected per Bri's request (2026-10-02)
+Purchased Streak Freezes are stored in the player's Shop inventory. If the player misses a day of qualifying learning activity, **one owned Streak Freeze activates automatically**, protecting the streak for that missed day, and its inventory count decreases by one. Clearly tell the player that their freeze was used on their next visit. A freeze does not generate lesson-completion rewards or count as a completed lesson.
