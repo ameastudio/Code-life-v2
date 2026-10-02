@@ -100,3 +100,6 @@ When a learner answers incorrectly, their **chosen Code Pet gives a helpful hint
 
 ## Lesson quiz progression gate — approved (2026-10-02)
 A learner must **pass the short end-of-lesson quiz before the next Code City lesson checkpoint unlocks**. Failed attempts do not advance progression; use the approved chosen-pet hints and three-blue-heart rules. Passing threshold: **80%**. Missed quiz concepts receive a brief correction/review so errors are not simply skipped.
+
+## Daily lesson limit — approved (2026-10-02)
+Limit learners to **4 new lessons per day**. After reaching the daily limit, users can still revisit completed lessons, do quick reviews, practice in Playground, and work on available projects without being locked out of the app. New-lesson count resets at the start of the next local day. Preserve the approved lesson-screen designs.
