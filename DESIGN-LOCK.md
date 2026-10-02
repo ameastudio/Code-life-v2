@@ -130,3 +130,6 @@ Pet Shop outfits and accessories are purchased using **earned Code Coins only**.
 
 ## Evolution-gated Pet Shop cosmetics — approved (2026-10-02)
 Pet Shop outfits and accessories **unlock gradually as the player's chosen Code Pet evolves**. Unlocked items are then purchasable using earned Code Coins only, except exclusive items awarded for Boss Builds. Eligible equipped items may grant the previously approved small activity-based XP bonuses. Evolution milestones and specific unlock tables will be specified separately.
+
+## Town-based pet evolution — approved (2026-10-02)
+Chosen Code Pets **evolve by completing entire Code City towns**, not by accumulating general XP. Award the evolution at completion of that town's final Boss Build along with the existing pet celebration. Evolution adds tech-inspired/glowing upgrades and maintains the pet's original recognizable identity and approved design; pets do not age or change into unrelated creatures. New shop outfits and accessories unlock based on town-based evolution milestones.
