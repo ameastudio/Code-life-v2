@@ -136,3 +136,6 @@ Chosen Code Pets **evolve by completing entire Code City towns**, not by accumul
 
 ## Pet bedroom customization — declined (2026-10-02)
 Do **not** add purchasable bedroom customization or furniture decorating with coins. Keep the approved futuristic pet bedroom design intact. The Pet Shop may still sell previously approved pet outfits, accessories and Streak Freezes.
+
+## Interactive pet reactions — approved (2026-10-02)
+In the approved My Pet bedroom, **tapping the player's chosen pet triggers playful animated reactions**, including jumping, responding and playing/interacting with the player. Keep each original approved pet design recognizable and intact (no cropped ears, paws or tail). This is an interaction, not permission to redesign pets or the bedroom.
