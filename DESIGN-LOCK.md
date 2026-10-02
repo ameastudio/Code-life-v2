@@ -62,3 +62,6 @@ Tapping an unlocked numbered checkpoint on the continuous Code City road **opens
 - Current/unlocked next checkpoint glows brighter for navigation.
 - Locked future checkpoints appear dimmed (remain consistent with the blue art style).
 - GOLD is reserved for coins and special rewards; do not use all-gold completed stones.
+
+## Sequential checkpoint unlocking — approved (2026-10-02)
+Players must **complete their current lesson before the next Code City checkpoint unlocks**. No skipping ahead on the map. Previously completed lessons remain accessible for review.
