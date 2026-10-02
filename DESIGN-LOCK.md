@@ -112,3 +112,6 @@ Add a **daily learning streak** with the previously approved **blue cyber-flame 
 
 ## Meaningful revision maintains streak — assistant-selected per Bri's request (2026-10-02)
 YES: Successfully completing **at least one real revision exercise** counts as learning activity toward maintaining the daily streak, even if the learner does not complete a new lesson that day. Completing a new lesson also qualifies. Simply opening the app or tapping around does not qualify. This lets learners keep their streak on review-focused days. Distinguish this streak activity from the separate bonus for finishing all four new daily lessons.
+
+## Coin-purchased Streak Freezes — approved (2026-10-02)
+Players may spend **earned Code Coins** to buy **Streak Freezes**, protecting a daily learning streak if they miss a day. Freezes are a convenience/reward, never required to access lessons or reviews. Exact coin cost, inventory limit and automatic/manual activation can be decided during implementation.
