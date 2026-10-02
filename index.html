@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#092f84">
+  <meta name="description" content="Code Life — Where codes come to life.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Code Life">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="preload" href="./assets/entry-approved.webp" as="image" type="image/webp">
+  <style>
+/* Exact user-approved screenshot. Not a recreated lookalike. */
+:root{color-scheme:dark;background:#061f62}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;min-height:100%;overflow:hidden}
+body{min-height:100dvh;background:#072b7e;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.screen{position:relative;width:min(100vw,calc(100dvh * 941 / 1672));height:100dvh;max-height:100dvh;margin:auto;overflow:hidden;isolation:isolate;background:#062978;box-shadow:0 0 38px #0008}
+.approved-art{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;pointer-events:none;user-select:none;-webkit-user-drag:none}
+/* The central illustrated button is at x=19..81% and y=86..94% in the source image.
+   Coverage adapts to the typical extra horizontal crop on narrower phone screens. */
+.art-button{position:absolute;z-index:2;display:block;border:0;padding:0;background:transparent;color:transparent;touch-action:manipulation;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.art-button:focus-visible{outline:3px solid #e7faff;outline-offset:2px;border-radius:999px;box-shadow:0 0 22px #62dbff}
+.entry-button{top:85.5%;height:8.5%;width:72%;left:14%;border-radius:999px}
+.back-button{left:1%;top:0;height:13%;width:12%;border-radius:50%}
+[hidden]{display:none!important}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (min-aspect-ratio:941/1672){.screen{width:calc(100dvh * 941 / 1672)}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+</style>
+  <title>Code Life</title>
+</head>
+<body>
+  <main class="screen" id="screen" aria-label="Code Life">
+    <img id="approved-screen" class="approved-art" src="./assets/entry-approved.webp" alt="The approved Code Life entry screen: blue code icon, original Pixel Pup, neon city, and Get Started." fetchpriority="high">
+    <!-- The artwork is Bri's EXACT approved image, rather than a CSS approximation.
+         A real, accessible tap target sits precisely over the illustrated CTA. -->
+    <button id="get-started" class="art-button entry-button" type="button" aria-label="Get Started"></button>
+    <button id="go-back" class="art-button back-button" type="button" aria-label="Back to Code Life entry screen" hidden></button>
+    <span class="sr-only" aria-live="polite" id="screen-announcement"></span>
+  </main>
+  <script>
+/* v2: entry screen only; other screens will be coded individually after this one. */
+(()=>{
+  'use strict';
+  const art=document.getElementById('approved-screen');
+  const start=document.getElementById('get-started');
+  const back=document.getElementById('go-back');
+  const msg=document.getElementById('screen-announcement');
+  function render(){
+    const onLevel=location.hash==='#/level';
+    art.src=onLevel?'./assets/level-approved.webp':'./assets/entry-approved.webp';
+    art.alt=onLevel?'Approved Choose Your Coding Level reference screen. The level selection interactions are the next build step.':'Approved Code Life splash screen with original Pixel Pup and Get Started button.';
+    start.hidden=onLevel;
+    back.hidden=!onLevel;
+    msg.textContent=onLevel?'Choose your coding level. This is the approved visual reference; controls are being built next.':'Welcome to Code Life.';
+    document.title=onLevel?'Choose Your Coding Level — Code Life':'Code Life';
+  }
+  start.addEventListener('click',()=>{location.hash='/level';});
+  back.addEventListener('click',()=>{location.hash='/';});
+  addEventListener('hashchange',render);
+  render();
+})();
+
+</script>
+</body>
+</html>
