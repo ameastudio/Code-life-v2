@@ -56,3 +56,9 @@ Bri explicitly approved **EVERY screenshot she uploaded together in the 2026-10-
 
 ## Code City checkpoint interaction — approved
 Tapping an unlocked numbered checkpoint on the continuous Code City road **opens its lesson directly**, with no intermediate preview card and no second Start button. Checkpoints are themselves interactive and remain correctly aligned with the illustrated road. (Approved by Bri, 2026-10-02.)
+
+## Code City checkpoint completion visuals — selected by assistant at Bri's request
+- Completed checkpoints stay BLUE and show a glowing CYAN CHECKMARK.
+- Current/unlocked next checkpoint glows brighter for navigation.
+- Locked future checkpoints appear dimmed (remain consistent with the blue art style).
+- GOLD is reserved for coins and special rewards; do not use all-gold completed stones.
