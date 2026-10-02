@@ -22,3 +22,10 @@ Updated: 2026-10-02
 
 ## Asset upload verified (2026-10-02)
 Bri uploaded all four files to the repository ROOT rather than the requested folders. Correct uploaded paths: `entry-approved.webp`, `level-approved.webp`, `icon-192.png`, `icon-512.png`. `index.html` and `manifest.webmanifest` have been updated to use these exact root paths, so no additional file upload is necessary. GitHub Pages publication has not yet been confirmed on a browser; user should visit site or turn on Pages via Settings > Pages > Deploy from a branch, `main`, `/(root)`.
+
+## Step 2: Choose Your Coding Level implemented (2026-10-02)
+- The APPROVED `level-approved.webp` screenshot is displayed directly; no graphic replacements.
+- Three real invisible accessibility-labeled buttons placed precisely over Beginner, Intermediate and Advanced screenshot cards. Beginner initially selected; users may change selection, with a cyan focus/selection ring.
+- Continue saves the chosen level to `localStorage` (`code-life-v2:onboarding:level`) and confirms the save on the same screen. Saved choice is restored upon reopening; tapping the top-left area returns to the original entry screen.
+- The next learner identity screen is not yet built. **Continue does not navigate to it yet**, so do not claim full onboarding is finished.
+- Verified all artwork file paths are present in the GitHub repository. Local JavaScript logic tests for exclusive choice, persistence, back and image selection passed; browser-based mobile validation was blocked by test environment policy, so user must check the live app.
