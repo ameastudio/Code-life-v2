@@ -127,3 +127,6 @@ Pet Shop outfits and accessories can provide **small XP bonuses** when equipped,
 
 ## Pet Shop coins only — approved (2026-10-02)
 Pet Shop outfits and accessories are purchased using **earned Code Coins only**. Do not add real-money purchases for these items. Equipped outfits/accessories may grant the previously approved small XP bonuses, but do not provide passive XP or bypass lessons.
+
+## Evolution-gated Pet Shop cosmetics — approved (2026-10-02)
+Pet Shop outfits and accessories **unlock gradually as the player's chosen Code Pet evolves**. Unlocked items are then purchasable using earned Code Coins only, except exclusive items awarded for Boss Builds. Eligible equipped items may grant the previously approved small activity-based XP bonuses. Evolution milestones and specific unlock tables will be specified separately.
