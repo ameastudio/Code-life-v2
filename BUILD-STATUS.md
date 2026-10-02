@@ -19,3 +19,6 @@ Updated: 2026-10-02
 1. Wait for Bri to upload the assets/images and verify her GitHub Pages URL.
 2. Implement **Choose Your Coding Level** interactions from the third approved screenshot, keeping that screenshot's design; keep all other approved screenshots locked per `DESIGN-LOCK.md`.
 3. Preserve the previously approved scrolling Code City behavior; build that later as a separate phase.
+
+## Asset upload verified (2026-10-02)
+Bri uploaded all four files to the repository ROOT rather than the requested folders. Correct uploaded paths: `entry-approved.webp`, `level-approved.webp`, `icon-192.png`, `icon-512.png`. `index.html` and `manifest.webmanifest` have been updated to use these exact root paths, so no additional file upload is necessary. GitHub Pages publication has not yet been confirmed on a browser; user should visit site or turn on Pages via Settings > Pages > Deploy from a branch, `main`, `/(root)`.
