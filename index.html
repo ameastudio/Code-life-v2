@@ -9,9 +9,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Code Life">
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="icon" href="./icons/icon-192.png" sizes="192x192">
-  <link rel="apple-touch-icon" href="./icons/icon-192.png">
-  <link rel="preload" href="./assets/entry-approved.webp" as="image" type="image/webp">
+  <link rel="icon" href="./icon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="./icon-192.png">
+  <link rel="preload" href="./entry-approved.webp" as="image" type="image/webp">
   <style>
 /* Exact user-approved screenshot. Not a recreated lookalike. */
 :root{color-scheme:dark;background:#061f62}
@@ -36,7 +36,7 @@ body{min-height:100dvh;background:#072b7e;font-family:system-ui,-apple-system,Bl
 </head>
 <body>
   <main class="screen" id="screen" aria-label="Code Life">
-    <img id="approved-screen" class="approved-art" src="./assets/entry-approved.webp" alt="The approved Code Life entry screen: blue code icon, original Pixel Pup, neon city, and Get Started." fetchpriority="high">
+    <img id="approved-screen" class="approved-art" src="./entry-approved.webp" alt="The approved Code Life entry screen: blue code icon, original Pixel Pup, neon city, and Get Started." fetchpriority="high">
     <!-- The artwork is Bri's EXACT approved image, rather than a CSS approximation.
          A real, accessible tap target sits precisely over the illustrated CTA. -->
     <button id="get-started" class="art-button entry-button" type="button" aria-label="Get Started"></button>
@@ -53,7 +53,7 @@ body{min-height:100dvh;background:#072b7e;font-family:system-ui,-apple-system,Bl
   const msg=document.getElementById('screen-announcement');
   function render(){
     const onLevel=location.hash==='#/level';
-    art.src=onLevel?'./assets/level-approved.webp':'./assets/entry-approved.webp';
+    art.src=onLevel?'./level-approved.webp':'./entry-approved.webp';
     art.alt=onLevel?'Approved Choose Your Coding Level reference screen. The level selection interactions are the next build step.':'Approved Code Life splash screen with original Pixel Pup and Get Started button.';
     start.hidden=onLevel;
     back.hidden=!onLevel;
