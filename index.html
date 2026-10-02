@@ -101,7 +101,7 @@ body{min-height:100dvh;background:#072b7e;font-family:system-ui,-apple-system,Bl
     toast.hidden=true;
     clearTimeout(toastTimer);
     highlight();
-    msg.textContent=isLevel?'Choose your coding level. Beginner is selected by default.':'Welcome to Code Life.';
+    msg.textContent=isLevel?'Choose your coding level. '+chosen[0].toUpperCase()+chosen.slice(1)+' is selected.':'Welcome to Code Life.';
     document.title=isLevel?'Choose Your Coding Level — Code Life':'Code Life';
   }
   choices.forEach(button=>button.addEventListener('click',()=>{
