@@ -91,3 +91,9 @@ Lessons use a **three-heart system**. The user selected three hearts instead of 
 
 ## Incorrect-answer behavior — approved (2026-10-02)
 When a learner answers incorrectly, their **chosen Code Pet gives a helpful hint** and offers another attempt rather than immediately revealing the answer. Maintain the previously approved three-blue-heart system.
+
+## Progressive, SideMe-style lessons — approved (2026-10-02)
+- Model the **learning progression** on the short, step-by-step style Bri calls "SideMe": teach one small idea per screen, then guided micro-practice, independent practice, and a short end-of-lesson quiz. Increase difficulty gradually, building on what was learned in earlier lessons rather than jumping into an advanced task.
+- Provide **instant feedback**, chosen-pet reactions and helpful hints on mistakes (do not immediately reveal answers), with a maximum of three blue hearts and the separately approved heart-recovery policy.
+- Revisit previously taught material via spaced quick reviews and interleave it into future exercises; advance when the learner demonstrates understanding.
+- Match Bri's **already approved lesson, quick-review and completion screenshots exactly**. Do not replace the screenshot layout with a generic quiz UI; progression concerns lesson behavior, not permission to redesign.
