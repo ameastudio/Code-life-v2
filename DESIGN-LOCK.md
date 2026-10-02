@@ -115,3 +115,6 @@ YES: Successfully completing **at least one real revision exercise** counts as l
 
 ## Coin-purchased Streak Freezes — approved (2026-10-02)
 Players may spend **earned Code Coins** to buy **Streak Freezes**, protecting a daily learning streak if they miss a day. Freezes are a convenience/reward, never required to access lessons or reviews. Exact coin cost, inventory limit and automatic/manual activation can be decided during implementation.
+
+## Streak Freeze shop location — approved (2026-10-02)
+Streak Freezes are **purchased with earned Code Coins in the in-app Shop**. Keep purchase separate from the question of when a bought freeze activates; activation behavior is not yet approved.
