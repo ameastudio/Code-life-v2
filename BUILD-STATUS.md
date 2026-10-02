@@ -36,3 +36,12 @@ Bri uploaded all four files to the repository ROOT rather than the requested fol
 - Screen 2's Continue now saves coding level and navigates to Screen 3 (`#/identity`); Screen 3's top-left back hotspot returns to Screen 2. Entry screen and second-n lettering repair remain unchanged.
 - **BINARY ARTWORK UPLOAD IS STILL REQUIRED**: Bri must unzip `Code-Life-v2-Screen3-UPLOAD-THIS.zip` and upload its single `identity-approved.webp` file into the repository ROOT. Code was committed separately using the GitHub connector. Until this file is present, Screen 3 cannot display.
 - Screen 3's Continue confirms and saves the selection but intentionally does not navigate further: Screen 4's exact approved pet chooser and controls will be coded separately.
+
+## Step 4: Choose Your Code Pet — CODE COMPLETE, ART UPLOAD PENDING (2026-10-02)
+- Screen uses Bri's **exact reference image #5**, converted from original 941×1672 PNG into pixel-identical lossless WebP (`pet-chooser-approved.webp`, pixel equality tested).
+- All SIX named approved pets have accessible clickable card hotspots at their original visual locations. Selected pet stored on device under `code-life-v2:onboarding:pet`. Existing Pixel Pup artwork is the default selection; other choices get a dynamic cyan selection indicator. The original static Pixel Pup check badge gets covered only when a different pet is selected to avoid conflicting checked state.
+- Screen 3's Continue now persists learner identity and navigates to `#/pet-choice`. Screen 4's back button returns to Screen 3. Screen 4 Start Journey saves the chosen Code Pet and confirms with a temporary message.
+- **Required before viewing**: Bri must unzip `Code-Life-v2-Screen4-UPLOAD-THIS.zip`, upload only `pet-chooser-approved.webp` to the repository ROOT and commit. GitHub connector wrote the text code but did not upload the binary image.
+- **Code City is NOT implemented yet**; Screen 4 does not open an unapproved placeholder.
+- Existing corrected 'Beginner' lettering overlay remains present and is displayed only on the coding level screen.
+- Checked GitHub source: one JavaScript block parsed without syntax errors, exactly six pet hotspots, correct navigation and localStorage wiring. User testing on deployed app remains necessary.
