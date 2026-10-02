@@ -97,3 +97,6 @@ When a learner answers incorrectly, their **chosen Code Pet gives a helpful hint
 - Provide **instant feedback**, chosen-pet reactions and helpful hints on mistakes (do not immediately reveal answers), with a maximum of three blue hearts and the separately approved heart-recovery policy.
 - Revisit previously taught material via spaced quick reviews and interleave it into future exercises; advance when the learner demonstrates understanding.
 - Match Bri's **already approved lesson, quick-review and completion screenshots exactly**. Do not replace the screenshot layout with a generic quiz UI; progression concerns lesson behavior, not permission to redesign.
+
+## Lesson quiz progression gate — approved (2026-10-02)
+A learner must **pass the short end-of-lesson quiz before the next Code City lesson checkpoint unlocks**. Failed attempts do not advance progression; use the approved chosen-pet hints and three-blue-heart rules. Passing threshold still to be decided.
