@@ -142,3 +142,6 @@ In the approved My Pet bedroom, **tapping the player's chosen pet triggers playf
 
 ## Pet autonomous bedroom movement — approved in principle (2026-10-02)
 The player's chosen Code Pet may **occasionally move naturally around its approved cyber bedroom on its own** (subtle walking, blinking, sitting or idle behaviors), while also reacting when tapped. Implement and visually verify a **proper, uncropped, full-body rig of the EXACT approved Pixel Pup first**; only then scale the same technique to the other five approved pets. Do not claim flawless motion before device testing, or merely translate the existing cropped static PNG as a substitute for full-body articulated animation. Keep bedroom artwork and original pet designs unchanged.
+
+## Arcade — deferred by Bri (2026-10-02)
+Do not decide or build arcade minigame types yet. Bri explicitly requested that arcade planning happen later. Keep the previously approved physical-controller arcade entry point in the pet bedroom design, but defer its gameplay and implementation until Bri chooses to revisit it.
