@@ -53,3 +53,6 @@ Bri explicitly approved **EVERY screenshot she uploaded together in the 2026-10-
 - Exact district progression: **HTML Town → CSS District → JavaScript City → Python Lab → Data Vault**.
 - Each district gets its own approved architectural palette, signage, landscape and theme, while the road remains continuous. The approved illustrated screenshots remain reference; the one-image overview generated afterward is a CONCEPT MAP ONLY, not the in-app viewport or final art.
 - Match checkpoint coordinates and the depicted road precisely; checkpoints must be located ON the road, rather than added as a disconnected CSS overlay.
+
+## Code City checkpoint interaction — approved
+Tapping an unlocked numbered checkpoint on the continuous Code City road **opens its lesson directly**, with no intermediate preview card and no second Start button. Checkpoints are themselves interactive and remain correctly aligned with the illustrated road. (Approved by Bri, 2026-10-02.)
