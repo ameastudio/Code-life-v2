@@ -82,3 +82,9 @@ Completing each district's Boss Build awards **bonus XP**, **bonus Code Coins**,
 
 ## Lesson hearts — approved (2026-10-02)
 Lessons use a **three-heart system**. The user selected three hearts instead of unlimited retries. Exact heart deduction, refill and recovery behavior will be specified separately; do not assume or invent it.
+
+## Blue hearts recovery — assistant-selected per Bri's request (2026-10-02)
+- Display **three BLUE hearts** (not red) for lesson attempts.
+- Wrong answers cost one heart; a successful review exercise can restore one blue heart (maximum three).
+- Hearts also regenerate automatically: **one heart every 20 minutes** until full, so learners never get stuck permanently.
+- When hearts run out, offer review exercises to earn them back while new lessons pause. The player can still review completed material; do not charge coins for hearts or gate learning behind purchases.
