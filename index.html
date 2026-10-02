@@ -42,12 +42,17 @@ body{min-height:100dvh;background:#072b7e;font-family:system-ui,-apple-system,Bl
 .level-continue{left:37.1%;top:87.5%;width:56.2%;height:7.05%;border-radius:999px}
 .screen-toast{position:absolute;z-index:5;left:13%;right:13%;top:76%;padding:12px 17px;text-align:center;font-weight:750;font-size:clamp(13px,4vw,18px);line-height:1.3;color:#fff;border:2px solid #92edff;border-radius:18px;background:linear-gradient(110deg,#053a96f2,#0568c2f2);box-shadow:0 0 22px #00ceffbf}
 
+
+/* Surgical repair: only the malformed 2nd n in the original Beginner lettering.
+   Image aligned to the source's 941×1672 cover crop, never changes the rest of the art. */
+.beginner-letter-repair{position:absolute;z-index:1;pointer-events:none;left:calc(50% + 2.063397dvh);top:33.433014%;width:.717703dvh;height:1.136364dvh;object-fit:fill;user-select:none}
 </style>
   <title>Code Life</title>
 </head>
 <body>
   <main class="screen" id="screen" aria-label="Code Life">
     <img id="approved-screen" class="approved-art" src="./entry-approved.webp" alt="The approved Code Life entry screen: blue code icon, original Pixel Pup, neon city, and Get Started." fetchpriority="high">
+    <img id="beginner-n-repair" class="beginner-letter-repair" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAATCAIAAAArl3v+AAABaklEQVR42oWRsWqUURSEvzn3bhKSwEJsRPAJLCzUhxDyGlY+k5WioJUgqGAtoqUQq0WyjUHZTTQku5v/v2csfkWDC051DmeYM8NolZ4e8eDRy2fP304OT6VtL87Rcn//zv17d2/fvLaz0erJgodPPzx+8v7oe+5euY6KktXy9MWbg/He1d2dzVs3xvXg0/Gr1++OzzY02r7oaNkDsKXR3mR68uXbDzOO2Wx2PJ+bDEXrs3V9a7Zx3y/Pz7ruIqRYrbqWPXbaaVApChFYfefWO1M1FIBJO/EwCRtKraOIAkQ67WYnAMKBAwICBxamOv0b4ADxD6KhZqeNNTBMmD9kizqIKwqSAQWhotqiqBQVRUS1ZRuwBMLA8NpJJrazSpIESAiZWOPp8iq0xni9dNcv7wJsPFjwGvH/vluPamEiJWtoBaAByiFrI2rd2qSOTEnC0hASjIgheSgm0/miy2Ylgr9qEYuew698/MxPFzvPCai/CnMAAAAASUVORK5CYII=" alt="" aria-hidden="true" hidden>
     <!-- The artwork is Bri's EXACT approved image, rather than a CSS approximation.
          A real, accessible tap target sits precisely over the illustrated CTA. -->
     <button id="get-started" class="art-button entry-button" type="button" aria-label="Get Started"></button>
@@ -70,6 +75,7 @@ body{min-height:100dvh;background:#072b7e;font-family:system-ui,-apple-system,Bl
   const LEVELS=new Set(['beginner','intermediate','advanced']);
   const art=document.getElementById('approved-screen');
   const start=document.getElementById('get-started');
+  const letterRepair=document.getElementById('beginner-n-repair');
   const back=document.getElementById('go-back');
   const controls=document.getElementById('level-controls');
   const choices=[...document.querySelectorAll('.level-choice')];
@@ -98,6 +104,7 @@ body{min-height:100dvh;background:#072b7e;font-family:system-ui,-apple-system,Bl
     start.hidden=isLevel;
     back.hidden=!isLevel;
     controls.hidden=!isLevel;
+    letterRepair.hidden=!isLevel;
     toast.hidden=true;
     clearTimeout(toastTimer);
     highlight();
