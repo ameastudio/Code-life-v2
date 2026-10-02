@@ -73,3 +73,6 @@ Players must **complete their current lesson before the next Code City checkpoin
 
 ## End-of-district celebration — approved (2026-10-02)
 Completing the final lesson/challenge in any Code City district triggers a **big celebration with the player's chosen Code Pet**, before they continue into the seamlessly connected next district. The pet remains the player's chosen character and then advances to the next unlocked checkpoint.
+
+## District Boss Builds — approved (2026-10-02)
+Each Code City district ends with a larger **Boss Build** project that requires using skills learned in that district. Passing the Boss Build triggers the previously approved big celebration with the player's chosen pet, then unlocks continued progression to the next district. For Web Foundations, retain the earlier plan for HTML, CSS, and JavaScript Boss Builds to develop **the same growing interactive website** rather than three unrelated projects.
