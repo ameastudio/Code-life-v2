@@ -70,3 +70,6 @@ Players must **complete their current lesson before the next Code City checkpoin
 - The player's **one chosen Code Pet** hovers immediately **above the current numbered Code City checkpoint**, acting as their map marker.
 - Upon successfully completing that checkpoint's lesson, the pet **moves to hover above the next newly unlocked checkpoint**. The move should look animated, not an instant pet swap/teleport, while keeping all checkpoints aligned with the illustrated road.
 - Previous checkpoints remain blue with glowing cyan checkmarks; pet follows the active checkpoint as progression advances.
+
+## End-of-district celebration — approved (2026-10-02)
+Completing the final lesson/challenge in any Code City district triggers a **big celebration with the player's chosen Code Pet**, before they continue into the seamlessly connected next district. The pet remains the player's chosen character and then advances to the next unlocked checkpoint.
