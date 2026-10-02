@@ -29,3 +29,10 @@ Bri uploaded all four files to the repository ROOT rather than the requested fol
 - Continue saves the chosen level to `localStorage` (`code-life-v2:onboarding:level`) and confirms the save on the same screen. Saved choice is restored upon reopening; tapping the top-left area returns to the original entry screen.
 - The next learner identity screen is not yet built. **Continue does not navigate to it yet**, so do not claim full onboarding is finished.
 - Verified all artwork file paths are present in the GitHub repository. Local JavaScript logic tests for exclusive choice, persistence, back and image selection passed; browser-based mobile validation was blocked by test environment policy, so user must check the live app.
+
+## Step 3: learner identity selector coded (2026-10-02)
+- Uses Bri's exact approved screenshot supplied as image #4 in her 2026-10-02 reference collection. The original image was converted to **pixel-identical lossless WebP** named `identity-approved.webp` at the original 941×1672 resolution.
+- Real, separately tappable areas are aligned with the four image cards: Student, Self-taught learner, Career switcher, and Professional. Selection gets a cyan highlight and persists on device under `code-life-v2:onboarding:identity` after Continue.
+- Screen 2's Continue now saves coding level and navigates to Screen 3 (`#/identity`); Screen 3's top-left back hotspot returns to Screen 2. Entry screen and second-n lettering repair remain unchanged.
+- **BINARY ARTWORK UPLOAD IS STILL REQUIRED**: Bri must unzip `Code-Life-v2-Screen3-UPLOAD-THIS.zip` and upload its single `identity-approved.webp` file into the repository ROOT. Code was committed separately using the GitHub connector. Until this file is present, Screen 3 cannot display.
+- Screen 3's Continue confirms and saves the selection but intentionally does not navigate further: Screen 4's exact approved pet chooser and controls will be coded separately.
