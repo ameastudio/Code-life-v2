@@ -99,4 +99,4 @@ When a learner answers incorrectly, their **chosen Code Pet gives a helpful hint
 - Match Bri's **already approved lesson, quick-review and completion screenshots exactly**. Do not replace the screenshot layout with a generic quiz UI; progression concerns lesson behavior, not permission to redesign.
 
 ## Lesson quiz progression gate — approved (2026-10-02)
-A learner must **pass the short end-of-lesson quiz before the next Code City lesson checkpoint unlocks**. Failed attempts do not advance progression; use the approved chosen-pet hints and three-blue-heart rules. Passing threshold still to be decided.
+A learner must **pass the short end-of-lesson quiz before the next Code City lesson checkpoint unlocks**. Failed attempts do not advance progression; use the approved chosen-pet hints and three-blue-heart rules. Passing threshold: **80%**. Missed quiz concepts receive a brief correction/review so errors are not simply skipped.
