@@ -124,3 +124,6 @@ Purchased Streak Freezes are stored in the player's Shop inventory. If the playe
 
 ## Pet Shop outfit XP bonuses — approved (2026-10-02)
 Pet Shop outfits and accessories can provide **small XP bonuses** when equipped, in addition to changing the pet's appearance. XP is still earned by actually completing learning activities; outfitting the pet cannot unlock lessons, bypass quizzes, or earn passive progression by itself. Exact bonus values and stacking rules to be set during implementation.
+
+## Pet Shop coins only — approved (2026-10-02)
+Pet Shop outfits and accessories are purchased using **earned Code Coins only**. Do not add real-money purchases for these items. Equipped outfits/accessories may grant the previously approved small XP bonuses, but do not provide passive XP or bypass lessons.
