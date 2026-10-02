@@ -88,3 +88,6 @@ Lessons use a **three-heart system**. The user selected three hearts instead of 
 - Wrong answers cost one heart; a successful review exercise can restore one blue heart (maximum three).
 - Hearts also regenerate automatically: **one heart every 20 minutes** until full, so learners never get stuck permanently.
 - When hearts run out, offer review exercises to earn them back while new lessons pause. The player can still review completed material; do not charge coins for hearts or gate learning behind purchases.
+
+## Incorrect-answer behavior — approved (2026-10-02)
+When a learner answers incorrectly, their **chosen Code Pet gives a helpful hint** and offers another attempt rather than immediately revealing the answer. Maintain the previously approved three-blue-heart system.
