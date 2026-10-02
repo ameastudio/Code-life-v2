@@ -79,3 +79,6 @@ Each Code City district ends with a larger **Boss Build** project that requires 
 
 ## Boss Build rewards — approved (2026-10-02)
 Completing each district's Boss Build awards **bonus XP**, **bonus Code Coins**, and **exclusive pet accessories** for the player's chosen Code Pet, in addition to the approved end-of-town celebration. Rewards must be earned from learning/project completion rather than used to purchase level progression.
+
+## Lesson hearts — approved (2026-10-02)
+Lessons use a **three-heart system**. The user selected three hearts instead of unlimited retries. Exact heart deduction, refill and recovery behavior will be specified separately; do not assume or invent it.
