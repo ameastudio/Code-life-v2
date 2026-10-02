@@ -139,3 +139,6 @@ Do **not** add purchasable bedroom customization or furniture decorating with co
 
 ## Interactive pet reactions — approved (2026-10-02)
 In the approved My Pet bedroom, **tapping the player's chosen pet triggers playful animated reactions**, including jumping, responding and playing/interacting with the player. Keep each original approved pet design recognizable and intact (no cropped ears, paws or tail). This is an interaction, not permission to redesign pets or the bedroom.
+
+## Pet autonomous bedroom movement — approved in principle (2026-10-02)
+The player's chosen Code Pet may **occasionally move naturally around its approved cyber bedroom on its own** (subtle walking, blinking, sitting or idle behaviors), while also reacting when tapped. Implement and visually verify a **proper, uncropped, full-body rig of the EXACT approved Pixel Pup first**; only then scale the same technique to the other five approved pets. Do not claim flawless motion before device testing, or merely translate the existing cropped static PNG as a substitute for full-body articulated animation. Keep bedroom artwork and original pet designs unchanged.
