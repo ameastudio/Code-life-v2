@@ -65,3 +65,8 @@ Tapping an unlocked numbered checkpoint on the continuous Code City road **opens
 
 ## Sequential checkpoint unlocking — approved (2026-10-02)
 Players must **complete their current lesson before the next Code City checkpoint unlocks**. No skipping ahead on the map. Previously completed lessons remain accessible for review.
+
+## Personalized pet marker movement — approved (2026-10-02)
+- The player's **one chosen Code Pet** hovers immediately **above the current numbered Code City checkpoint**, acting as their map marker.
+- Upon successfully completing that checkpoint's lesson, the pet **moves to hover above the next newly unlocked checkpoint**. The move should look animated, not an instant pet swap/teleport, while keeping all checkpoints aligned with the illustrated road.
+- Previous checkpoints remain blue with glowing cyan checkmarks; pet follows the active checkpoint as progression advances.
