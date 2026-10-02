@@ -121,3 +121,6 @@ Streak Freezes are **purchased with earned Code Coins in the in-app Shop**. Keep
 
 ## Streak Freeze automatic activation — assistant-selected per Bri's request (2026-10-02)
 Purchased Streak Freezes are stored in the player's Shop inventory. If the player misses a day of qualifying learning activity, **one owned Streak Freeze activates automatically**, protecting the streak for that missed day, and its inventory count decreases by one. Clearly tell the player that their freeze was used on their next visit. A freeze does not generate lesson-completion rewards or count as a completed lesson.
+
+## Pet Shop outfit XP bonuses — approved (2026-10-02)
+Pet Shop outfits and accessories can provide **small XP bonuses** when equipped, in addition to changing the pet's appearance. XP is still earned by actually completing learning activities; outfitting the pet cannot unlock lessons, bypass quizzes, or earn passive progression by itself. Exact bonus values and stacking rules to be set during implementation.
