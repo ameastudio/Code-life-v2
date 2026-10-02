@@ -45,3 +45,11 @@ Bri explicitly approved **EVERY screenshot she uploaded together in the 2026-10-
 - **Separate interactable UI from background images** while preserving the exact screenshot appearance. A screenshot itself is not functional; use approved artwork assets for backgrounds/elements, wire real inputs/buttons, and verify on the target phone-size viewport. If necessary artwork exists only embedded in the screenshot, extract/crop/reconstruct for functional pieces without inventing new design. Alert Bri if exact visual fidelity cannot be guaranteed rather than claim otherwise.
 - Do not add/remove onboarding steps, new features, alternate mascots or layout modifications without explicit user approval. Review duplicated/contradictory references only when the specific screen is being implemented.
 - User wants a screen-by-screen rebuild but **does NOT want to approve each already-approved screenshot again**. Ask only essential implementation questions.
+
+## Code City scrolling world — approved (2026-10-02)
+- A **single vertically scrolling, continuous Candy Crush-like road**, in a gently top-down/flat-lay game-map view. NOT a single overview showing every level at once.
+- Phone viewport shows approximately **3–5 numbered checkpoint stones at a time**; user scrolls to see subsequent levels.
+- **Seamless visual district transitions while scrolling**, with NO separate district pages or loading screens.
+- Exact district progression: **HTML Town → CSS District → JavaScript City → Python Lab → Data Vault**.
+- Each district gets its own approved architectural palette, signage, landscape and theme, while the road remains continuous. The approved illustrated screenshots remain reference; the one-image overview generated afterward is a CONCEPT MAP ONLY, not the in-app viewport or final art.
+- Match checkpoint coordinates and the depicted road precisely; checkpoints must be located ON the road, rather than added as a disconnected CSS overlay.
