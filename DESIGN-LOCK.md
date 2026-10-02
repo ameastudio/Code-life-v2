@@ -109,3 +109,6 @@ Completing all **4 new daily lessons** awards a bonus of **XP and Code Coins**. 
 
 ## Daily streak and milestone rewards — approved (2026-10-02)
 Add a **daily learning streak** with the previously approved **blue cyber-flame icon**. Award milestone rewards for streak achievements. Exact streak qualifying activity, milestone schedule and streak-freeze rules will be decided separately. Keep the visual styling aligned with Bri's approved screenshots.
+
+## Meaningful revision maintains streak — assistant-selected per Bri's request (2026-10-02)
+YES: Successfully completing **at least one real revision exercise** counts as learning activity toward maintaining the daily streak, even if the learner does not complete a new lesson that day. Completing a new lesson also qualifies. Simply opening the app or tapping around does not qualify. This lets learners keep their streak on review-focused days. Distinguish this streak activity from the separate bonus for finishing all four new daily lessons.
