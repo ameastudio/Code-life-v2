@@ -106,3 +106,6 @@ Limit learners to **4 new lessons per day**. After reaching the daily limit, use
 
 ## Daily completion reward — approved (2026-10-02)
 Completing all **4 new daily lessons** awards a bonus of **XP and Code Coins**. This is a reward for learning, not a requirement for reviewing or using Playground. Exact reward quantities will be set during implementation.
+
+## Daily streak and milestone rewards — approved (2026-10-02)
+Add a **daily learning streak** with the previously approved **blue cyber-flame icon**. Award milestone rewards for streak achievements. Exact streak qualifying activity, milestone schedule and streak-freeze rules will be decided separately. Keep the visual styling aligned with Bri's approved screenshots.
