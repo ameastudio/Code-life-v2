@@ -103,3 +103,6 @@ A learner must **pass the short end-of-lesson quiz before the next Code City les
 
 ## Daily lesson limit — approved (2026-10-02)
 Limit learners to **4 new lessons per day**. After reaching the daily limit, users can still revisit completed lessons, do quick reviews, practice in Playground, and work on available projects without being locked out of the app. New-lesson count resets at the start of the next local day. Preserve the approved lesson-screen designs.
+
+## Daily completion reward — approved (2026-10-02)
+Completing all **4 new daily lessons** awards a bonus of **XP and Code Coins**. This is a reward for learning, not a requirement for reviewing or using Playground. Exact reward quantities will be set during implementation.
