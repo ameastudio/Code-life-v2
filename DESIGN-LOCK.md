@@ -268,3 +268,6 @@ Bri approved opening Settings as a **sleek mobile slide-up sheet** on top of Cod
 
 ## Settings drawer — updated right-side entrance
 Bri requested Settings **slide in from the RIGHT**, which suits the top-right Settings gear better than the previously approved bottom slide-up presentation. Supersede the bottom sheet: implement an elegant **right-edge side drawer** with rounded dark-navy styling and subtle blue glow, retaining the user's exact map scroll position when opened/closed. Keep a visible close control, accessible gesture-independent operation, and the approved settings entries (Sound, Notifications, Learning Preferences, confirmation-protected Reset Progress). Bri has not yet chosen the drawer's exact width.
+
+## Settings right drawer width and backdrop — approved
+Bri approved the proposed **dark-navy Settings drawer sliding in from the RIGHT** (supersedes any older bottom-sheet plan), occupying **approximately 80% of the phone screen width** with a subtle **dimmed Code City map behind it**. Retain a softly glowing blue-accented rounded premium design, obvious close button and the user's exact map scroll location behind and after closing. It opens from the distinct blue-gear top-right capsule. Contents: Sound, Notifications, Learning Preferences, and confirmation-protected Reset Progress. No new imagery unless Bri asks explicitly.
