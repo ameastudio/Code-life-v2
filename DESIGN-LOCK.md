@@ -169,3 +169,6 @@ Players may **freely scroll backward** along the same continuous floating road t
 
 ## Code City animation scope — simplified following Bri's concern (2026-10-03)
 Keep **floating-road scenery, buildings, waterfalls and district backgrounds STATIC** for reliability and fidelity to the approved screenshot. Limit Code City motion to only (1) the chosen pet's movement between completed/current checkpoints, and (2) smooth camera auto-scroll to follow that pet. Test both separately on mobile before considering any other decorative motion. Do not promise untested complex animation or add it without explicit approval.
+
+## Boss Build checkpoint appearance — approved (2026-10-03)
+At the end of each town, the **Boss Build checkpoint is noticeably larger and more impressive** than ordinary numbered tech pads, while retaining the approved original blue futuristic floating-highway visual language. Keep ordinary checkpoints as number-only glowing pads; distinguish Boss Builds visually without changing the continuous scrolling road or adding decorative animation.
