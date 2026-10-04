@@ -277,3 +277,6 @@ Bri approved keeping the **redesigned separate top status capsules fixed at the 
 
 ## Individual notification preferences — approved
 Bri approved **three INDEPENDENT notification toggles** in the Code City Settings right drawer: (1) daily learning reminders, (2) hearts/lives fully refilled, and (3) streak warnings when a qualifying lesson/review has not been completed. Each may be enabled or disabled separately, and a master notifications preference is fine if its effect is clear. Only ask browser notification permission following a user action. Distinguish in-app alerts from true push: **cross-device/background push requires a deployed service worker, user permission, push subscriptions and a backend/scheduler**; do NOT promise reliable background notifications from a static GitHub Pages-only build until implemented and tested. Preserve Bri's preference for no gratuitous images.
+
+## Notification quiet hours — declined
+Bri declined customizable Quiet Hours and the proposed 10 PM–8 AM default. Do not add Quiet Hours to Settings. Keep the three individually switchable notification categories already approved.
