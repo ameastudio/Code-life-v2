@@ -157,3 +157,6 @@ After a learner completes a lesson, their chosen Code Pet animates to hover abov
 
 ## Visibility of future Code City checkpoints — assistant-selected at Bri's request (2026-10-03)
 Keep **future locked level stones visible but softly dimmed along the continuous blue floating highway**, so players can see where they are headed. Use only a subtle cloud/mist veil over more distant, not-yet-reached town scenery for atmosphere; never hide nearby numbered checkpoints or obscure the winding road. The next active checkpoint remains brightly blue-glowing, while completed ones show their cyan checkmarks. Maintain the exact approved original floating-highway look.
+
+## Revisiting earlier towns — assistant-selected at Bri's request (2026-10-03)
+Players may **freely scroll backward** along the same continuous floating road to explore towns and tap completed checkpoints to replay their lessons for revision. Their chosen pet continues to mark their **current active checkpoint**, not whichever old lesson they happen to view. Include a discreet **Return to My Level** control that smoothly scrolls back to the current checkpoint. Future locked stones remain visible but cannot be entered; exploring completed areas never resets progression.
