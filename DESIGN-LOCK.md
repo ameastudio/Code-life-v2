@@ -148,3 +148,6 @@ Do not decide or build arcade minigame types yet. Bri explicitly requested that 
 
 ## Code City main visual reference — confirmed by Bri (2026-10-03)
 **Option A ONLY:** Use the **original futuristic BLUE floating highway screenshot** (first image in Bri's 2026-10-02 reference collection) as the principal, exact visual reference. Blue elevated winding road, floating islands, waterfalls, sky/clouds, high-tech district landmarks, and glowing numbered checkpoint stones. Maintain the separately approved continuous vertical Candy Crush-style scrolling map (3–5 checkpoints visible at once) through HTML Town → CSS District → JavaScript City → Python Lab → Data Vault. Other colorful town montage imagery is NOT the main style reference; districts must evolve within the original futuristic blue floating-highway design, not switch to a separate cartoon/village art style. Preserve the original screenshot's look and feel rather than reimagining it.
+
+## Code City resume position — approved (2026-10-03)
+When the player reopens Code Life, Code City **automatically scrolls to their currently unlocked checkpoint**, with their **chosen Code Pet hovering above that stone**. Resume without making players manually search the long continuous map. Preserve saved progress and the original futuristic blue floating-highway style.
