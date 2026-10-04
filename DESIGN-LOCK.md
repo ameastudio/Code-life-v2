@@ -154,3 +154,6 @@ When the player reopens Code Life, Code City **automatically scrolls to their cu
 
 ## Auto-advance map camera — approved (2026-10-03)
 After a learner completes a lesson, their chosen Code Pet animates to hover above the **next unlocked checkpoint**, and Code City's vertical map **automatically scrolls to follow the pet and center/bring the new checkpoint into view**. Do not require manual scrolling to find the next stone. Maintain a smooth scrolling transition consistent with the continuous floating-road map and respect reduced-motion accessibility settings.
+
+## Visibility of future Code City checkpoints — assistant-selected at Bri's request (2026-10-03)
+Keep **future locked level stones visible but softly dimmed along the continuous blue floating highway**, so players can see where they are headed. Use only a subtle cloud/mist veil over more distant, not-yet-reached town scenery for atmosphere; never hide nearby numbered checkpoints or obscure the winding road. The next active checkpoint remains brightly blue-glowing, while completed ones show their cyan checkmarks. Maintain the exact approved original floating-highway look.
