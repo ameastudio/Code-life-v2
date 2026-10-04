@@ -283,3 +283,6 @@ Bri declined customizable Quiet Hours and the proposed 10 PM–8 AM default. Do 
 
 ## Accessibility — Reduce Motion approved
 Bri approved an individually switchable **Reduce Motion** option in Code City's Settings right drawer. When enabled, remove or minimize decorative animation and large moving transitions (including settings panel sliding and pet idle/hop animation) while keeping maps, checkpoints, progress and controls fully functional; prefer subtle instant or short fades. Honor OS `prefers-reduced-motion` by default, while allowing the in-app setting to override when explicitly chosen. Keep the seamless scrolling world navigable without forced motion. No new images unless Bri explicitly requests them.
+
+## Lesson text sizes — approved; Settings decisions finalized
+Bri approved adjustable lesson reading size in Learning Preferences: **Small, Medium and Large**, with Medium the sensible default. Apply throughout learning content without clipping, preserving controls, safe padding, accessible reflow. Bri expressed question fatigue and asked how many more Settings questions: **NO MORE SETTINGS DESIGN QUESTIONS**; existing decisions are sufficient to implement. Return focus to building/testing the agreed Code City revisions rather than soliciting further optional settings.
