@@ -201,3 +201,9 @@ Learners who select **Intermediate** or **Advanced** during onboarding take a sh
 
 ## Placement quiz mastery skips — approved (2026-10-03)
 Intermediate and Advanced learners who **pass the placement quiz may skip earlier lessons that the quiz demonstrates they have already mastered**. Those prerequisites count as placement-cleared, so the learner begins at their assessed unlocked checkpoint on Code City's continuous road. This is a deliberate exception to the normal rule that lessons unlock strictly in order: once placement is complete, all NEW lessons from their assigned starting checkpoint must be passed sequentially, including the end-of-lesson quiz. Earlier placement-cleared lessons stay available for optional review. Don't award XP, coins, daily-completion credit, or Boss Build rewards merely for lessons bypassed via assessment. Beginner learners still start from the beginning.
+
+## Placement quiz timing and start-from-scratch option — approved (2026-10-03)
+- Placement assessment happens **AFTER** the learner chooses and saves their Code Pet during onboarding.
+- Intermediate and Advanced learners are offered two explicit choices: **Take Placement Quiz** (assess knowledge and skip demonstrably mastered earlier lessons) or **Start From Scratch** (begin at global Level 1 without placement assessment).
+- Beginners start at global Level 1 without a placement quiz.
+- The chosen Code Pet stays with learners regardless of which route they select.
