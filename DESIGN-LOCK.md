@@ -175,3 +175,6 @@ At the end of each town, the **Boss Build checkpoint is noticeably larger and mo
 
 ## Code City district length — approved (2026-10-03)
 **Level counts vary by town based on its real teaching curriculum**, not equal-length or decorative district sizes. Map each meaningful short lesson/quiz to a checkpoint, include the previously approved topic challenges and final Boss Build, and adjust the physical length/number of checkpoint pads to fit. Reuse the established HTML/CSS/JavaScript lesson plan where suitable; plan Python Lab and Data Vault lessons fully before inventing their exact counts. Do not force an identical number of levels in each district.
+
+## Code City map navigation — approved (2026-10-03)
+Code City uses **vertical scrolling only**, like Candy Crush. Do **not** implement pinch-to-zoom, zoom buttons or a draggable/zoomable map. Keep all checkpoint pads, signs and roads at their designed scale, with automatic scrolling to the player's current checkpoint as approved.
