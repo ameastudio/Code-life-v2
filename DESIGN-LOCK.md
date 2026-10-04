@@ -271,3 +271,6 @@ Bri requested Settings **slide in from the RIGHT**, which suits the top-right Se
 
 ## Settings right drawer width and backdrop — approved
 Bri approved the proposed **dark-navy Settings drawer sliding in from the RIGHT** (supersedes any older bottom-sheet plan), occupying **approximately 80% of the phone screen width** with a subtle **dimmed Code City map behind it**. Retain a softly glowing blue-accented rounded premium design, obvious close button and the user's exact map scroll location behind and after closing. It opens from the distinct blue-gear top-right capsule. Contents: Sound, Notifications, Learning Preferences, and confirmation-protected Reset Progress. No new imagery unless Bri asks explicitly.
+
+## Persistent redesigned Code City top capsules — approved
+Bri approved keeping the **redesigned separate top status capsules fixed at the TOP of the mobile viewport** while the single seamless five-town map scrolls underneath. Capsules: unmistakably blue hearts, blue XP star/count, shiny 3D unmistakably GOLD coin embossed `</>`, and individual neat blue Settings gear; preserve compact, mobile-readable layout. Settings opens its previously approved 80%-width right-side dark-navy drawer with dimmed map, retaining exact scroll position. Ensure fixed controls do not obscure map checkpoints/town signs and respect mobile safe areas.
