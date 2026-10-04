@@ -207,3 +207,6 @@ Intermediate and Advanced learners who **pass the placement quiz may skip earlie
 - Intermediate and Advanced learners are offered two explicit choices: **Take Placement Quiz** (assess knowledge and skip demonstrably mastered earlier lessons) or **Start From Scratch** (begin at global Level 1 without placement assessment).
 - Beginners start at global Level 1 without a placement quiz.
 - The chosen Code Pet stays with learners regardless of which route they select.
+
+## Pet evolution following placement skips — assistant-selected (2026-10-03)
+If a learner passes the placement quiz and skips completed prerequisite towns, their chosen pet **automatically evolves to the stage appropriate for their assessed starting town**, so its appearance fits their current Code City area. This is a placement exception to the normal complete-a-town evolution rule. However, **exclusive Boss Build accessories and bonus XP/coins are not awarded for skipped towns**; those rewards require actually completing the relevant Boss Build. If the learner elects Start From Scratch, their pet starts at its initial evolution stage. All six pet designs must remain recognizable as their originally approved characters.
