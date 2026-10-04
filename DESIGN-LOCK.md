@@ -178,3 +178,6 @@ At the end of each town, the **Boss Build checkpoint is noticeably larger and mo
 
 ## Code City map navigation — approved (2026-10-03)
 Code City uses **vertical scrolling only**, like Candy Crush. Do **not** implement pinch-to-zoom, zoom buttons or a draggable/zoomable map. Keep all checkpoint pads, signs and roads at their designed scale, with automatic scrolling to the player's current checkpoint as approved.
+
+## Code City progression direction — approved (2026-10-03)
+Code City progression moves **UPWARD**: the player begins toward the lower part of the long vertical map and advances upward along the continuous futuristic blue floating highway toward each next island/town. Ordinary navigation remains vertical scrolling only. On reopening or completing lessons, auto-scroll upward/to the currently unlocked checkpoint, with the chosen pet hovering above the active pad. Maintain seamless district transitions.
