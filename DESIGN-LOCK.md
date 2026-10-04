@@ -151,3 +151,6 @@ Do not decide or build arcade minigame types yet. Bri explicitly requested that 
 
 ## Code City resume position — approved (2026-10-03)
 When the player reopens Code Life, Code City **automatically scrolls to their currently unlocked checkpoint**, with their **chosen Code Pet hovering above that stone**. Resume without making players manually search the long continuous map. Preserve saved progress and the original futuristic blue floating-highway style.
+
+## Auto-advance map camera — approved (2026-10-03)
+After a learner completes a lesson, their chosen Code Pet animates to hover above the **next unlocked checkpoint**, and Code City's vertical map **automatically scrolls to follow the pet and center/bring the new checkpoint into view**. Do not require manual scrolling to find the next stone. Maintain a smooth scrolling transition consistent with the continuous floating-road map and respect reduced-motion accessibility settings.
