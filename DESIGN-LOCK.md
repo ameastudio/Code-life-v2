@@ -184,3 +184,6 @@ Code City progression moves **UPWARD**: the player begins toward the lower part 
 
 ## Locked checkpoint tap behavior — assistant-selected at Bri's request (2026-10-03)
 When a player taps a future **locked** Code City checkpoint, their chosen Code Pet displays a **brief, unobtrusive speech bubble** explaining which prerequisite lesson or Boss Build needs completing first (e.g., "Finish Level 7 first!"). Do not navigate away, open a blocking modal, reveal answers, skip lessons, or change saved progress. Keep the futuristic road and numbered checkpoint layout unchanged.
+
+## Continuous checkpoint numbering — assistant-selected at Bri's request (2026-10-03)
+Checkpoint numbers **continue sequentially across all five towns** instead of restarting from 1 in each district. This supports the seamless, upward-scrolling road. District names remain on modest roadside billboards and define town boundaries; ordinary glowing tech pads display the global level number only. Boss Build pads are visually larger, as approved.
