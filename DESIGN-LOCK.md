@@ -160,3 +160,9 @@ Keep **future locked level stones visible but softly dimmed along the continuous
 
 ## Revisiting earlier towns — assistant-selected at Bri's request (2026-10-03)
 Players may **freely scroll backward** along the same continuous floating road to explore towns and tap completed checkpoints to replay their lessons for revision. Their chosen pet continues to mark their **current active checkpoint**, not whichever old lesson they happen to view. Include a discreet **Return to My Level** control that smoothly scrolls back to the current checkpoint. Future locked stones remain visible but cannot be entered; exploring completed areas never resets progression.
+
+## Code City signs and numbered checkpoints — approved (2026-10-03)
+- District transitions use **modest futuristic roadside signs or billboards**, seamlessly integrated into the original blue floating-highway map, not giant welcome screens.
+- The floating world remains futuristic blue/cyan; each district's road sign may have a subtle identifying accent color. **HTML Town specifically uses BLUE** (not orange). Other district sign accents are provisional until the visuals are finalized.
+- Level checkpoints are **glowing futuristic tech pads**, not plain circles or conventional stones. Each checkpoint pad displays its **NUMBER ONLY**, with no book or code icon.
+- Preserve existing states: completed pads blue with cyan checkmarks; current pad brighter; future pads softly dimmed. Keep checkpoint numbering prominent and aligned directly on the continuous road.
