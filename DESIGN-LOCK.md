@@ -187,3 +187,6 @@ When a player taps a future **locked** Code City checkpoint, their chosen Code P
 
 ## Continuous checkpoint numbering — assistant-selected at Bri's request (2026-10-03)
 Checkpoint numbers **continue sequentially across all five towns** instead of restarting from 1 in each district. This supports the seamless, upward-scrolling road. District names remain on modest roadside billboards and define town boundaries; ordinary glowing tech pads display the global level number only. Boss Build pads are visually larger, as approved.
+
+## Code City sound — assistant-selected at Bri's request (2026-10-03)
+Use **short, satisfying sound effects only** for checkpoint completion, pet movement arrival, Boss Build celebrations and reward collection. **No looping background music**, keeping the map calm and lightweight. Include an obvious sound on/off setting; default to muted until the player interacts so mobile browsers are respected. Sound never blocks lesson progression or map use.
