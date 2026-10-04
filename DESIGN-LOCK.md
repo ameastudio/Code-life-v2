@@ -219,3 +219,6 @@ After a learner successfully completes a town's final Boss Build, show the previ
 
 ## Boss Builds and the daily new-lesson cap — assistant-selected
 Boss Builds **remain available after the 4-new-lessons daily limit** because they are applied projects rather than new lessons, provided the player has already unlocked the Boss Build by completing the preceding lessons and required checks. A Boss Build does not count toward the four new lessons and may be resumed over multiple sessions. The cap still applies to beginning additional NEW lessons. Award Boss Build rewards once, only on successful completion.
+
+## Boss Build autosave and resume — assistant-selected
+Allow learners to **save unfinished Boss Builds and resume on another day**. Automatically preserve edits regularly and when leaving a project; provide a visible Save status and a manual Save option. Returning to the same unlocked Boss Build should restore the last saved code and progress instead of restarting. In the initial local-only version, use durable browser/device storage (prefer IndexedDB for project content) and explain that clearing browser data or switching devices can lose these local drafts; cloud sync may be added later when account infrastructure is available. Award completion rewards once, only when the Boss Build passes its required checks.
