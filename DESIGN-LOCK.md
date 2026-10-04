@@ -265,3 +265,6 @@ Bri confirmed the coin must be unmistakably **rich shiny GOLD, NEVER silver or g
 
 ## Settings presentation — slide-up sheet approved
 Bri approved opening Settings as a **sleek mobile slide-up sheet** on top of Code City. The settings gear stays in its own blue-accented header capsule. Opening Settings must preserve the current map scroll/checkpoint and not navigate away. Closing returns to the exact prior context. Include the previously approved Sound, Notifications, Learning Preferences and confirmation-protected Reset Progress options. Use smooth, restrained motion, keyboard/screen-reader-friendly close and focus behavior. No new images or concepts generated without explicit request.
+
+## Settings drawer — updated right-side entrance
+Bri requested Settings **slide in from the RIGHT**, which suits the top-right Settings gear better than the previously approved bottom slide-up presentation. Supersede the bottom sheet: implement an elegant **right-edge side drawer** with rounded dark-navy styling and subtle blue glow, retaining the user's exact map scroll position when opened/closed. Keep a visible close control, accessible gesture-independent operation, and the approved settings entries (Sound, Notifications, Learning Preferences, confirmation-protected Reset Progress). Bri has not yet chosen the drawer's exact width.
