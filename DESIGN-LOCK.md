@@ -172,3 +172,6 @@ Keep **floating-road scenery, buildings, waterfalls and district backgrounds STA
 
 ## Boss Build checkpoint appearance — approved (2026-10-03)
 At the end of each town, the **Boss Build checkpoint is noticeably larger and more impressive** than ordinary numbered tech pads, while retaining the approved original blue futuristic floating-highway visual language. Keep ordinary checkpoints as number-only glowing pads; distinguish Boss Builds visually without changing the continuous scrolling road or adding decorative animation.
+
+## Code City district length — approved (2026-10-03)
+**Level counts vary by town based on its real teaching curriculum**, not equal-length or decorative district sizes. Map each meaningful short lesson/quiz to a checkpoint, include the previously approved topic challenges and final Boss Build, and adjust the physical length/number of checkpoint pads to fit. Reuse the established HTML/CSS/JavaScript lesson plan where suitable; plan Python Lab and Data Vault lessons fully before inventing their exact counts. Do not force an identical number of levels in each district.
