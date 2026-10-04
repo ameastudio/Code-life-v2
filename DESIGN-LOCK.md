@@ -216,3 +216,6 @@ Checkpoint pads for lessons bypassed through a **passed placement quiz** use a *
 
 ## Automatic progression into the next town — approved
 After a learner successfully completes a town's final Boss Build, show the previously approved big celebration and pet evolution, then **automatically transition and smoothly scroll upward into the next town** on the same uninterrupted floating highway. Do **not** require a separate Continue tap after the celebration. Preserve earned rewards and the player's newly unlocked checkpoint. No separate town loading screen or visual redesign.
+
+## Boss Builds and the daily new-lesson cap — assistant-selected
+Boss Builds **remain available after the 4-new-lessons daily limit** because they are applied projects rather than new lessons, provided the player has already unlocked the Boss Build by completing the preceding lessons and required checks. A Boss Build does not count toward the four new lessons and may be resumed over multiple sessions. The cap still applies to beginning additional NEW lessons. Award Boss Build rewards once, only on successful completion.
