@@ -88,6 +88,7 @@ body{min-height:100dvh;background:#072b7e;font-family:system-ui,-apple-system,Bl
 .pet-default-check-cover{position:absolute;left:42.0%;top:23.22%;width:6.55%;height:3.74%;border-radius:50%;pointer-events:none;background:radial-gradient(ellipse at 52% 46%,#d6f4ff 5%,#d6effe 42%,#b3e3fa 75%,transparent 90%);}
 </style>
   <title>Code Life</title>
+  <link rel="stylesheet" href="./code-city.css">
 </head>
 <body>
   <main class="screen" id="screen" aria-label="Code Life">
@@ -129,6 +130,7 @@ body{min-height:100dvh;background:#072b7e;font-family:system-ui,-apple-system,Bl
     </div>
     <div id="screen-toast" class="screen-toast" role="status" aria-live="polite" hidden></div>
     <span class="sr-only" aria-live="polite" id="screen-announcement"></span>
+    <div id="city-root" hidden aria-label="Code City"></div>
   </main>
   <script>
 /* Code Life v2 screens 1–4: ONLY Bri's approved screenshot assets are displayed. */
@@ -173,11 +175,12 @@ function highlight(){
   levelChoices.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.level===chosenLevel)));
   identityChoices.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.identity===chosenIdentity)));
   petChoices.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.pet===chosenPet)));
-  originalPetBadgeCover.hidden=chosenPet==='pixel-pup';
+  originalPetBadgeCover.hidden=true;
+  if(location.hash==='#/pet-choice')art.src=chosenPet==='pixel-pup'?'./pet-chooser-approved.webp':'./pet-chooser-neutral.webp';
 }
 function render(){
   const hash=location.hash;
-  const page=hash==='#/pet-choice'?'pet':hash==='#/identity'?'identity':hash==='#/level'?'level':'entry';
+  const page=(hash==='#/city'||hash.startsWith('#/lesson/'))?'city':hash==='#/pet-choice'?'pet':hash==='#/identity'?'identity':hash==='#/level'?'level':'entry';
   art.src=page==='pet'?'./pet-chooser-approved.webp':page==='identity'?'./identity-approved.webp':page==='level'?'./level-approved.webp':'./entry-approved.webp';
   art.alt=page==='pet'
     ?'Approved Choose your Code Pet screen featuring the exact Pixel Pup, Byte Cat, Nova Owl, Loop Fox, Chip Bunny and Glitch Dino artwork.'
@@ -186,8 +189,10 @@ function render(){
       :page==='level'
         ?'Approved Choose your coding level screen with Beginner, Intermediate, Advanced and Pixel Pup.'
         :'Official Code Life entry screen with approved logo and Pixel Pup.';
+  art.hidden=page==='city';
+  document.getElementById('city-root').hidden=page!=='city';
   start.hidden=page!=='entry';
-  back.hidden=page==='entry';
+  back.hidden=page==='entry'||page==='city';
   back.classList.toggle('show-back-art',page==='level'||page==='identity');
   back.setAttribute('aria-label',page==='pet'?'Back to learner profile':page==='identity'?'Back to coding level':'Back to Get Started');
   levelControls.hidden=page!=='level';
@@ -215,8 +220,13 @@ identityContinue.addEventListener('click',()=>{
 petContinue.addEventListener('click',()=>{
   try{localStorage.setItem(PET_KEY,chosenPet);}catch(_){announce('Allow device storage to save your choice.');return;}
   msg.textContent=petNames[chosenPet]+' chosen and saved.';
-  announce(petNames[chosenPet]+' saved! Code City comes next.');
-  /* Do not fake Code City. It will be connected after its separate approved build. */
+  if(chosenLevel!=='beginner'){
+    announce('Placement quiz or Start From Scratch comes next. We are building that screen separately.');
+    return;
+  }
+  if(!window.CodeCity){announce('The Code City artwork package needs its one-time upload first.');return;}
+  try{localStorage.setItem('code-life-v2:onboarding:complete','yes');}catch(_){}
+  location.hash='/city';
 });
 start.addEventListener('click',()=>{location.hash='/level';});
 back.addEventListener('click',()=>{
@@ -224,7 +234,12 @@ back.addEventListener('click',()=>{
 });
 addEventListener('hashchange',render);
 render();
+setTimeout(()=>{
+  try{if(!location.hash&&localStorage.getItem('code-life-v2:onboarding:complete')==='yes'&&window.CodeCity)location.hash='/city';}catch(_){}
+},0);
 })();
 </script>
+<script src="./curriculum.js"></script>
+<script src="./code-city.js"></script>
 </body>
 </html>
