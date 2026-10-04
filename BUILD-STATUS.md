@@ -45,3 +45,14 @@ Bri uploaded all four files to the repository ROOT rather than the requested fol
 - **Code City is NOT implemented yet**; Screen 4 does not open an unapproved placeholder.
 - Existing corrected 'Beginner' lettering overlay remains present and is displayed only on the coding level screen.
 - Checked GitHub source: one JavaScript block parsed without syntax errors, exactly six pet hotspots, correct navigation and localStorage wiring. User testing on deployed app remains necessary.
+
+## Code City first functional build — single-upload package ready
+A tested local Code City build has been prepared as ONE flat 11-file bundle: `Code-Life-v2-ONE-UPLOAD-Code-City.zip`. It contains `code-city.css`, `code-city.js`, `curriculum.js`, `city-road.webp`, `pet-chooser-neutral.webp`, and SIX `pet-map-*.png` exact-approved-character assets. All files belong in the repo ROOT; no subfolders.
+
+GitHub `index.html` is ALREADY connected to load `code-city.css`, `curriculum.js` and `code-city.js` and route Beginner onboarding into Code City. It retains existing 4 approved onboarding screenshots, back buttons, official no-Saturn Code Life wordmark on map, and corrected Beginner lettering. The approved Pixel Pup neutral card art is switched dynamically on selection of other pets.
+
+**The 11 asset/source files in the ZIP have NOT yet been uploaded to GitHub.** Before user uploads the ZIP contents, no claim that Code City is deployed. The original entry/onboarding experience continues to work; clicking Start Journey shows a pending-upload notice if `window.CodeCity` isn't available. Do not attempt additional manual GitHub file-by-file uploads: Bri wants ONE upload.
+
+**Verified locally in a simulated 390px mobile browser:** 27 actual HTML/CSS/JS checkpoint levels (8 lessons + Boss Build per town), 5 district roadside signs, 3 bigger Boss pads, single chosen current pet, upward resume scroll, locked hints, navigation icons; first HTML lesson code validation + end quiz + XP/coins + next checkpoint unlock; no uncaught JS errors. The neutral pet artwork changes only the top-left Pixel Pup tile in the original approved chooser, and a full-body Pixel Pup marker is extracted from the approved six-pet screenshot. ZIP integrity/flat filename paths verified. No new pictures were generated.
+
+**Not finished:** unique high-detail architecture for each future district (currently modest recolored static accents on same blue road reference), Python Lab/Data Vault lesson content (their scenery is visible, but no invented pads/lesson counts), fully pixel-matched lesson screen styling, full rigged pet movement/evolution skins, Intermediate/Advanced placement assessment (onboarding properly gates advanced learners to prevent skipping that decision), the other approved nav screens and monetization. Saved data is local to device. Phone-specific visual check remains pending Bri's return.
