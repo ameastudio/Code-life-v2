@@ -166,3 +166,6 @@ Players may **freely scroll backward** along the same continuous floating road t
 - The floating world remains futuristic blue/cyan; each district's road sign may have a subtle identifying accent color. **HTML Town specifically uses BLUE** (not orange). Other district sign accents are provisional until the visuals are finalized.
 - Level checkpoints are **glowing futuristic tech pads**, not plain circles or conventional stones. Each checkpoint pad displays its **NUMBER ONLY**, with no book or code icon.
 - Preserve existing states: completed pads blue with cyan checkmarks; current pad brighter; future pads softly dimmed. Keep checkpoint numbering prominent and aligned directly on the continuous road.
+
+## Code City animation scope — simplified following Bri's concern (2026-10-03)
+Keep **floating-road scenery, buildings, waterfalls and district backgrounds STATIC** for reliability and fidelity to the approved screenshot. Limit Code City motion to only (1) the chosen pet's movement between completed/current checkpoints, and (2) smooth camera auto-scroll to follow that pet. Test both separately on mobile before considering any other decorative motion. Do not promise untested complex animation or add it without explicit approval.
