@@ -234,3 +234,6 @@ Learners can **export/download the code and assets of projects they created for 
 
 ## Optional final completion certificate
 Include a simple, **free and optional downloadable Code Life completion certificate** once a learner finishes all five towns and their cumulative final project. It is an in-app achievement certificate, **not an accredited qualification**. Bri expressed mild approval ('I guess'), so keep it low priority and do not let it delay Code City or core lessons.
+
+## No unfinished Boss Build shortcut on Code City — approved
+Do **not** add a separate map button or floating shortcut to unfinished Boss Builds. Players return to their unlocked Boss Build using its existing larger checkpoint pad on the continuous scrolling road; current-level auto-scroll and the chosen hovering pet already guide them there. Keep the Code City interface uncluttered.
