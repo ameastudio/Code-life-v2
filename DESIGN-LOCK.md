@@ -280,3 +280,6 @@ Bri approved **three INDEPENDENT notification toggles** in the Code City Setting
 
 ## Notification quiet hours — declined
 Bri declined customizable Quiet Hours and the proposed 10 PM–8 AM default. Do not add Quiet Hours to Settings. Keep the three individually switchable notification categories already approved.
+
+## Accessibility — Reduce Motion approved
+Bri approved an individually switchable **Reduce Motion** option in Code City's Settings right drawer. When enabled, remove or minimize decorative animation and large moving transitions (including settings panel sliding and pet idle/hop animation) while keeping maps, checkpoints, progress and controls fully functional; prefer subtle instant or short fades. Honor OS `prefers-reduced-motion` by default, while allowing the in-app setting to override when explicitly chosen. Keep the seamless scrolling world navigable without forced motion. No new images unless Bri explicitly requests them.
