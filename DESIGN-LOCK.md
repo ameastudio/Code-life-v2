@@ -190,3 +190,8 @@ Checkpoint numbers **continue sequentially across all five towns** instead of re
 
 ## Code City sound — assistant-selected at Bri's request (2026-10-03)
 Use **short, satisfying sound effects only** for checkpoint completion, pet movement arrival, Boss Build celebrations and reward collection. **No looping background music**, keeping the map calm and lightweight. Include an obvious sound on/off setting; default to muted until the player interacts so mobile browsers are respected. Sound never blocks lesson progression or map use.
+
+## Map progress placement and onboarding Back navigation — approved (2026-10-03)
+- **No town-completion progress bar on the Code City map**. Place town-completion progress in the separately approved **Progress** section instead.
+- Every onboarding question screen before entering Code City must offer a working **Back** option: Coding Level → official Entry screen; "What describes you best?" → Coding Level; Choose Your Code Pet → "What describes you best?". Going Back must preserve already selected answers and not reset progress.
+- Implemented visible matching small blue/cyan back arrow buttons on the first two question screens without editing their approved screenshot artwork. The approved pet-chooser screenshot already contains a back arrow: keep that original arrow as its visual target, with a functioning tappable overlay.
