@@ -213,3 +213,6 @@ If a learner passes the placement quiz and skips completed prerequisite towns, t
 
 ## Placement-cleared checkpoint visual state — assistant-selected (2026-10-03)
 Checkpoint pads for lessons bypassed through a **passed placement quiz** use a **soft blue dotted outline and their usual number**, rather than the glowing cyan checkmark reserved for lessons the learner personally completed. This keeps the numbered-pad design consistent and distinguishes assessed mastery from earned completion without implying failure. Tapping a placement-cleared checkpoint opens its earlier lesson for optional practice; progression does not reset. The active checkpoint remains brightly lit and marked by the chosen hovering pet.
+
+## Automatic progression into the next town — approved
+After a learner successfully completes a town's final Boss Build, show the previously approved big celebration and pet evolution, then **automatically transition and smoothly scroll upward into the next town** on the same uninterrupted floating highway. Do **not** require a separate Continue tap after the celebration. Preserve earned rewards and the player's newly unlocked checkpoint. No separate town loading screen or visual redesign.
