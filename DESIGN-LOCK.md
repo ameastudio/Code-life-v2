@@ -237,3 +237,6 @@ Include a simple, **free and optional downloadable Code Life completion certific
 
 ## No unfinished Boss Build shortcut on Code City — approved
 Do **not** add a separate map button or floating shortcut to unfinished Boss Builds. Players return to their unlocked Boss Build using its existing larger checkpoint pad on the continuous scrolling road; current-level auto-scroll and the chosen hovering pet already guide them there. Keep the Code City interface uncluttered.
+
+## HTML Town roadside welcome sign — final approved option
+Bri approved **Option 1 / Option A from the three roadside welcome-sign comparison images** and specifically its **EXACT size**: a modest, blue futuristic "Welcome to HTML Town" sign installed beside the road near the current opening checkpoints, like a welcome-to-state roadside sign. The player is ALREADY IN HTML Town on arrival; the path must NOT look as if it leads toward a separate HTML Town entrance or big gate. Use this option's size, roadside position and visual treatment without changing the chosen futuristic-blue map style. Do not redesign the sign or enlarge it. Keep the original six Code Pets (the comparison image's alternate cat is only a sign-position reference, NOT a replacement pet).
