@@ -231,3 +231,6 @@ Use a **shared technical project structure with player-chosen themes and content
 
 ## Free export, paid publishing — approved
 Learners can **export/download the code and assets of projects they created for FREE**, including their completed cumulative final project. Code Life may charge for **optional one-click publishing, premium templates, and managed custom-domain setup**; an optional hosting subscription can be considered later. **Never hold the learner's own code behind a paywall**, and do not require payment to complete lessons, Boss Builds or earn a final project. Publishing, domain and hosting features require a real backend/payment service and operational costs; determine providers, pricing and implementation in a separate monetization phase. Do not display functional purchase or publishing buttons before those services are ready.
+
+## Optional final completion certificate
+Include a simple, **free and optional downloadable Code Life completion certificate** once a learner finishes all five towns and their cumulative final project. It is an in-app achievement certificate, **not an accredited qualification**. Bri expressed mild approval ('I guess'), so keep it low priority and do not let it delay Code City or core lessons.
