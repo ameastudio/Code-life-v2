@@ -1,0 +1,81 @@
+/* Code City revised October 2026: continuous scenic road, separate HUD capsules, accessible settings drawer. */
+#city-root{--zone-height:clamp(610px,calc(100dvh - 151px),865px)}
+#city-root .city-topbar{box-sizing:border-box;display:flex;gap:clamp(2px,.85vw,7px);padding:9px clamp(3px,1.3vw,12px);height:70px;min-height:70px;background:linear-gradient(#0a306c,#054f9d 54%,#053575);border:none;box-shadow:0 4px 16px #073b8578}
+#city-root .city-brand{font-size:clamp(17px,4.8vw,25px);flex:1;letter-spacing:-.7px;font-weight:1000;min-width:0;white-space:nowrap;text-shadow:0 2px 7px #001634a3}
+#city-root .city-hud-stat{flex:0 0 auto;box-sizing:border-box;border:1.5px solid #61cafa;border-radius:21px;padding:3px clamp(3px,.85vw,7px);gap:3px;min-height:37px;background:linear-gradient(152deg,#06245b,#063a87 75%,#0b5eb3);box-shadow:0 3px 0 #001d4a, inset 0 1px 5px #a5f5ff48;font-size:clamp(10px,2.75vw,13px)}
+#city-root .city-hud-stat .big{font-size:clamp(16px,4.5vw,21px);line-height:1}
+#city-root .city-hud-stat .heart{color:#2febff;text-shadow:0 0 9px #39ecff}
+#city-root .city-hud-stat .star{color:#58ebff;text-shadow:0 0 8px #83f8ff}
+#city-root .city-hud-stat small{font-size:9px;font-weight:900;opacity:.89}
+#city-root .city-gold-coin{width:25px;height:25px;min-width:25px;box-sizing:border-box;display:grid;place-items:center;border-radius:50%;font:bold 8px/1 ui-monospace,monospace;letter-spacing:-1.3px;color:#fff8bd;background:radial-gradient(circle at 32% 23%,#fff2a0 0,#ffd342 26%,#ed9200 66%,#a95200 100%);border:3px double #ffea6d;box-shadow:0 2px 0 #8b4400,0 0 9px #ffb223a8,inset -2px -2px 2px #a95600,inset 2px 2px 2px #fffbd3;text-shadow:0 1px 1px #c07505;transform:rotate(-10deg)}
+#city-root .city-settings{display:grid;place-items:center;flex:0 0 auto;box-sizing:border-box;width:37px;height:37px;border:1.5px solid #73dfff;border-radius:14px;box-shadow:0 3px 0 #001d48,inset 0 1px 6px #65dbff4d;color:#a8ebff;background:linear-gradient(150deg,#1552a9,#0a2c68);padding:7px;cursor:pointer}
+#city-root .city-settings svg{display:block;width:100%;height:100%;filter:drop-shadow(0 0 3px #78dfff)}
+#city-root .city-plus{height:17px;width:17px;font-size:12px;line-height:13px}
+#city-root .city-scroll{scroll-behavior:smooth;background:linear-gradient(to bottom,#071d59 0,#174ca9 34%,#49a4e5 64%,#7ec4f3 100%);scrollbar-width:none}
+#city-root .city-world{position:relative;max-width:540px;isolation:isolate;overflow:hidden;background:linear-gradient(to bottom,#112e70 0%,#2872be 55%,#68b7ed 100%)}
+#city-root .city-world-backdrops{position:absolute;z-index:0;inset:0;pointer-events:none}
+#city-root .city-zone-art{position:relative;box-sizing:border-box;height:var(--zone-height);overflow:visible;isolation:isolate;pointer-events:none}
+#city-root .city-zone-art::before{content:"";display:block;position:absolute;inset:-13% 0;z-index:0;opacity:.89;background-size:cover;background-position:center center;-webkit-mask-image:linear-gradient(to bottom,transparent 1%,black 23%,black 77%,transparent 99%);mask-image:linear-gradient(to bottom,transparent 1%,black 23%,black 77%,transparent 99%)}
+#city-root .city-zone-art.html{background:linear-gradient(#61c4ff2e,#97d5ff13)}
+#city-root .city-zone-art.html::before{background-image:url('./city-road.webp');background-size:cover;filter:blur(1px) saturate(1.18);background-position:45% 30%}
+#city-root .city-zone-art.css{background:radial-gradient(at 25% 45%,#d777e174,transparent 55%),linear-gradient(#2665b56e,#55b8fb24)}
+#city-root .city-zone-art.css::before{background-image:url('https://ameastudio.github.io/Code-life/css-district.webp');filter:blur(1px) saturate(1.24);background-position:30% 40%}
+#city-root .city-zone-art.js{background:radial-gradient(at 65% 31%,#f8c14970,transparent 56%),linear-gradient(#3386c1a6,#5bbce73d)}
+#city-root .city-zone-art.js::before{background-image:url('https://ameastudio.github.io/Code-life/course-city.webp');filter:blur(1px) saturate(1.13);background-position:72% 42%}
+#city-root .city-zone-art.python{background:radial-gradient(at 35% 35%,#47e5c680,transparent 66%),linear-gradient(#225faaa3,#2286b994)}
+#city-root .city-zone-art.python::before{background-image:url('https://ameastudio.github.io/Code-life/code-city-gate.webp');filter:blur(2px) hue-rotate(22deg) saturate(1.18);background-position:30% 58%}
+#city-root .city-zone-art.sql{background:radial-gradient(ellipse at 45% 75%,#255da1c4,transparent 65%),linear-gradient(180deg,#08265b,#0b336e 67%,#155898)}
+#city-root .city-zone-art.sql::before{background-image:repeating-linear-gradient(90deg,transparent 0 27px,#2fa9eb29 28px 30px,transparent 31px 47px),radial-gradient(circle at 50% 50%,#3e8eddad,transparent 65%);filter:none;opacity:.9}
+#city-root .city-landmark-art{position:absolute;width:100%;height:100%;z-index:1;opacity:.93;filter:drop-shadow(0 0 15px #95f4ff5a)}
+#city-root .city-zone-art.css .city-landmark-art{filter:drop-shadow(0 0 18px #c792ff85)}
+#city-root .city-zone-art.js .city-landmark-art{filter:drop-shadow(0 0 19px #f7bb3970)}
+#city-root .city-zone-art.python .city-landmark-art{filter:drop-shadow(0 0 16px #30ffc780)}
+#city-root .city-zone-art.sql .city-landmark-art{filter:drop-shadow(0 0 14px #38afff8c)}
+#city-root .city-road-svg{position:absolute;z-index:1;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+#city-root .city-world-panels{position:relative;z-index:2;pointer-events:none}
+#city-root .city-panel{position:relative;box-sizing:border-box;height:var(--zone-height);background:transparent!important;border:0!important;isolation:auto;pointer-events:none}
+#city-root .city-panel::before,#city-root .city-panel::after{display:none}
+#city-root .city-pad,#city-root .city-road-sign{pointer-events:auto}
+#city-root .city-pad{box-sizing:border-box;width:clamp(44px,12vw,55px);min-width:44px;height:clamp(39px,10.6vw,47px);font-size:clamp(16px,4.7vw,22px);border-width:2px;box-shadow:0 4px 0 #1b5289,0 7px 0 #10284e,0 1px 13px #32dcff,inset 0 2px 5px #c4faff}
+#city-root .city-pad.is-locked{box-shadow:0 4px 0 #234869,0 7px 0 #152943}
+#city-root .city-pad.is-current{box-shadow:0 4px 0 #2353aa,0 8px 0 #07193c,0 0 12px 4px #42edff,inset 0 2px 7px #d5fdff}
+#city-root .city-pad.is-boss{width:clamp(69px,18vw,88px);height:clamp(53px,14vw,63px);font-size:24px;border-width:3px;box-shadow:0 5px 0 #274d97,0 10px 0 #132b52,0 0 16px #42e5ff,inset 0 2px 9px #d7fdff}
+#city-root .city-pad .boss-diamond{top:-12px;font-size:13px}
+#city-root .city-pad .check{width:19px;height:19px;font-size:12px;top:-8px;right:-7px;border-width:1px}
+#city-root .city-active-pet{width:clamp(54px,16vw,71px);height:clamp(61px,19vw,80px);bottom:73%;object-position:bottom center;filter:drop-shadow(0 2px 5px #012d5cd5)}
+#city-root .city-floating-pet{width:66px;height:77px}
+#city-root .city-road-sign{left:1.9%;top:73%;max-width:39%;min-width:132px;padding:10px 9px 12px;box-sizing:border-box;font-size:clamp(14px,3.9vw,19px);border-width:2px;transform:rotate(-3deg);box-shadow:0 0 0 4px #073169d9,0 0 16px var(--accent,#62ecff),inset 0 0 14px #58a5ef50}
+#city-root .city-road-sign small{font-size:11px}
+#city-root .city-road-sign::after{bottom:-30px;height:29px;width:7px}
+#city-root .city-return{top:75px;z-index:6;box-shadow:0 4px 12px #003a78aa}
+#city-root .city-scene{font-size:var(--lesson-text,16px)}
+#city-root[data-text-size='small']{--lesson-text:14px}
+#city-root[data-text-size='medium']{--lesson-text:16px}
+#city-root[data-text-size='large']{--lesson-text:20px}
+#city-root .city-lesson-card p{font-size:var(--lesson-text,16px)}
+#city-root .city-settings-backdrop{position:absolute;inset:0;z-index:49;background:#0216389c}
+#city-root .city-settings-backdrop[hidden]{display:none}
+#city-root .city-settings-drawer{position:absolute;right:0;top:0;bottom:0;width:80%;z-index:50;box-sizing:border-box;display:flex;flex-direction:column;border-left:2px solid #43c8ff;border-radius:25px 0 0 25px;background:linear-gradient(135deg,#09204c,#0a3975 65%,#06204c);box-shadow:-8px 0 29px #001537a8,inset 0 0 15px #7be9ff23;color:white;transform:translateX(110%);visibility:hidden;transition:transform .27s ease,visibility .27s ease}
+#city-root .city-settings-drawer.open{transform:translateX(0);visibility:visible}
+#city-root .city-drawer-header{display:flex;justify-content:space-between;align-items:center;padding:21px 15px 7px;border-bottom:1px solid #41a1d94a}
+#city-root .city-drawer-header h2{font-size:24px;margin:0;color:#eaf9ff}
+#city-root .city-drawer-close{border:1px solid #69d7ff;background:#084387;border-radius:12px;color:white;font-size:19px;width:38px;height:38px}
+#city-root .city-drawer-scroll{padding:0 15px 30px;overflow:auto;overscroll-behavior:contain}
+#city-root .city-drawer-scroll section{padding:13px 0;border-bottom:1px solid #81d9ff39}
+#city-root .city-drawer-scroll h3{font-size:15px;letter-spacing:.4px;color:#81eaff;margin:0 0 10px}
+#city-root .city-toggle{min-height:47px;display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:13px;line-height:1.3}
+#city-root .city-toggle input{appearance:none;flex:0 0 44px;width:44px;height:25px;border-radius:30px;background:#25446d;box-shadow:inset 0 0 4px #01152e;position:relative;border:1px solid #7da6cc;cursor:pointer}
+#city-root .city-toggle input::after{content:"";position:absolute;top:2px;left:2px;width:19px;height:19px;background:#d9f1ff;border-radius:50%;transition:transform .2s}
+#city-root .city-toggle input:checked{background:#00a6e6;border-color:#5fedff}
+#city-root .city-toggle input:checked::after{transform:translateX(19px)}
+#city-root .city-settings-note{font-size:12px;line-height:1.4;color:#a8c7df}
+#city-root .city-size-select{display:block;margin-top:8px;border:1px solid #5dcbff;border-radius:10px;background:#0a4688;color:#fff;font-size:15px;padding:10px;width:100%}
+#city-root .city-reset-btn{border:1px solid #f3acb5;background:#4d2c54;border-radius:10px;padding:10px;color:#fff;cursor:pointer}
+#city-root.city-reduce-motion .city-settings-drawer{transition:none}
+#city-root.city-reduce-motion .city-scroll{scroll-behavior:auto}
+#city-root.city-reduce-motion .city-floating-pet{transition:none}
+@media(max-width:374px){#city-root .city-topbar{gap:2px}#city-root .city-brand{font-size:16px}#city-root .city-hud-stat{font-size:10px;padding:3px 3px}#city-root .city-gold-coin{width:22px;height:22px;min-width:22px;font-size:7px}#city-root .city-settings{width:34px;height:35px}}
+@media(prefers-reduced-motion:reduce){#city-root .city-settings-drawer{transition:none}#city-root .city-toggle input::after{transition:none}}
+
+/* The first town uses its approved art softly as environmental texture; never show a second baked-in road behind the shared highway. */
+#city-root .city-zone-art.html::before{opacity:.48;filter:blur(5px) saturate(1.18)}
